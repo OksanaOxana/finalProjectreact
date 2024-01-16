@@ -1,38 +1,151 @@
-.App {
-  text-align: center;
+body {
+  background:#1A1A1D;
+   
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1, h2, h3 {
+  font-family: 'Lora', serif;
+  background-image: linear-gradient(to top,#c3073F, #950740, #6F2232);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1 {
+  font-size: 50px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.info {
+  font-family: 'Source Sans 3', sans-serif;
+  color: #6F2232;
+  font-size: 22px;
+} 
+
+.header {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  margin: 20px;
+}
+
+
+.Link {
+  background: #c3073F;
+  padding: 10px;
+  text-decoration: none;
+  color:#1A1A1D;
+  margin: 5px;
+  font-family: 'Source Sans 3', sans-serif;
+  font-weight: bold;
+}
+
+h6 {
+  font-family: 'Lora', serif;
+  color:#6F2232; 
+  font-size: 14px;
+}
+
+h3 {
+  font-style: italic;
+}
+
+.mainPhoto {
+  border: solid 5px #6F2232;
+}
+
+.containerMain {
   display: flex;
   flex-direction: column;
+}
+
+.containerTwo {
+  display: flex;
+  padding: 10px;
+}
+
+.containerText {
+  display: flex;
   align-items: center;
+  padding: 20px;
+}
+
+.containerThree {
+  display: flex;
+  text-align: center;
+  margin: 20px;
+  padding: 10px;
+}
+
+li {
+  font-family: 'Lora', serif;
+}
+
+.divPhoto {
+  box-shadow: 25px 20px 3px 10px #950740;
+}
+
+img {
+  background: white;
+  padding: 10px;
+}
+
+.main, .paragraph, nav, .smallHeaderTwo, .smallHeader {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+
+nav {
+  padding: 10px;
+  margin-top: 15px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.paragraph {
+  flex-direction: column;
+  text-align: center;
+  padding: 10px;
 }
+
+.smallHeader {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.smallHeaderTwo {
+  flex-direction: column;
+  text-align: center;
+  padding: 15px;
+  background: grey;
+}
+
+.parSmall {
+  width: 400px
+}
+
+.pic {
+  background: whitesmoke;
+}
+
+.btn {
+  color:#c3073F;
+  font-family: 'Source Sans 3', sans-serif;
+}
+
+.par {
+  font-family: 'Source Sans 3', sans-serif;
+  color: whitesmoke;
+  font-size: 22px;
+} 
+
+.infoAllaTwo {
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 22px;
+  background: #1A1A1D;
+  color: whitesmoke
+}
+
+
+
+
+
+
