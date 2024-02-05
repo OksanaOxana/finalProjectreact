@@ -18,28 +18,28 @@ function ControlledCarousel() {
   return (
     <Carousel activeIndex={index} onSelect={handleSelect}>
       <Carousel.Item>
-        <img src={allaOne} height="450px" width="550px" text="1 slide" alt="pic"/>
+        <img className='carouselAlla' src={allaOne} height="450px" width="550px" text="1 slide" alt="pic"/>
         <Carousel.Caption>
         <p className='infoAllaTwo'>Here you can learn about IT!</p>
         </Carousel.Caption>
         </Carousel.Item>
 
       <Carousel.Item>
-        <img src={allaTwo}  height="450px" width="550px" text="2 slide" alt="pic"/>
+        <img className='carouselAlla' src={allaTwo}  height="450px" width="550px" text="2 slide" alt="pic"/>
         <Carousel.Caption>
           <p className='infoAllaTwo'>Alla shares information about controlling gadgets with the power of thought</p>
         </Carousel.Caption>
       </Carousel.Item>
  
       <Carousel.Item>
-        <img src={allaFive} height="450px" width="550px" text="3 slide" alt="pic"/>
+        <img className='carouselAlla' src={allaFive} height="450px" width="550px" text="3 slide" alt="pic"/>
         <Carousel.Caption>
           <p className='infoAllaTwo'>Alla also gives useful information in various areas of life</p>
         </Carousel.Caption>
       </Carousel.Item>
 
       <Carousel.Item>
-        <img src={allaThree} height="450px" width="550px" text="4 slide" alt="pic"/>
+        <img className='carouselAlla' src={allaThree} height="450px" width="550px" text="4 slide" alt="pic"/>
         <Carousel.Caption>
           <p className='infoAllaTwo'>For example, she pays great attention to 
           a healthy lifestyle and proper nutrition!</p>
@@ -47,7 +47,7 @@ function ControlledCarousel() {
         </Carousel.Item>
 
         <Carousel.Item>
-        <img src={allaFour} height="450px" width="550px" text="5 slide" alt="pic"/>
+        <img className='carouselAlla' src={allaFour} height="450px" width="550px" text="5 slide" alt="pic"/>
         <Carousel.Caption>
           <p className='infoAllaTwo'>
 Alla knows how to present any information in such a way that it becomes very interesting</p>
@@ -56,7 +56,7 @@ Alla knows how to present any information in such a way that it becomes very int
 
 
       <Carousel.Item>
-        <img src={allaSix} height="450px" width="550px" text="6 slide" alt="pic"/>
+        <img className='carouselAlla' src={allaSix} height="450px" width="550px" text="6 slide" alt="pic"/>
         <Carousel.Caption>
           <p className='infoAllaTwo'>Model Shudu shoots for famous brands. 
           But this is not a living person, 
@@ -65,9 +65,8 @@ Alla knows how to present any information in such a way that it becomes very int
       </Carousel.Item>
 
       <Carousel.Item>
-        <img src={allaSeven} height="450px" width="550px" text="7 slide" alt="pic"/>
+        <img className='carouselAlla' src={allaSeven} height="450px" width="550px" text="7 slide" alt="pic"/>
         <Carousel.Caption>
-          <h3 className='2'>Alla is the creator of the CanSheCode programming school</h3>
           <p className='infoAllaTwo'>She teaches not only how to write code correctly, 
                 but also supports and helps in every possible way!!!</p>
         </Carousel.Caption>

@@ -1,12 +1,15 @@
-function Buttons() {
+
+
+function Buttons({filteredDishes}) {
+  
     return(
         <div className="smallHeader">
-            <button>Cakes</button>
-            <button>Pies</button>
-            <button>No-bake desserts</button>
-            <button>Recipes with berries</button>
-            <button>Chocolate recipes</button>
-            <button>Famous sweets</button>
+     
+            <button className="mainBtn" onClick={() =>filteredDishes("cake")}>Cakes</button>
+            <button className="mainBtn" onClick={() =>filteredDishes("pie")}>Pies</button>
+            <button className="mainBtn" onClick={() =>filteredDishes("no-bake")}>No-bake desserts</button>
+            <button className="mainBtn" onClick={() =>filteredDishes("berries")}>Recipes with berries</button>
+            <button className="mainBtn" onClick={() =>filteredDishes("chocolate")}>Chocolate recipes</button>
         </div>
     )
 }

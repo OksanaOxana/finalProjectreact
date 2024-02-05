@@ -1,42 +1,16 @@
 body {
-  background:#1A1A1D;
-   
+  background:#1A1A1D 
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
   font-family: 'Lora', serif;
   background-image: linear-gradient(to top,#c3073F, #950740, #6F2232);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
-
 }
 
 h1 {
-  font-size: 50px;
-}
-
-.info {
-  font-family: 'Source Sans 3', sans-serif;
-  color: #6F2232;
-  font-size: 22px;
-} 
-
-.header {
-  display: flex;
-  justify-content: center;
-  padding: 10px;
-  margin: 20px;
-}
-
-
-.Link {
-  background: #c3073F;
-  padding: 10px;
-  text-decoration: none;
-  color:#1A1A1D;
-  margin: 5px;
-  font-family: 'Source Sans 3', sans-serif;
-  font-weight: bold;
+  font-size: 60px;
 }
 
 h6 {
@@ -47,6 +21,35 @@ h6 {
 
 h3 {
   font-style: italic;
+}
+
+h5 {
+  font-family: 'Lora', serif;
+  color:#4E4E50
+}
+
+.info {
+  font-family: 'Source Sans 3', sans-serif;
+  color: #6F2232;
+  font-size: 22px;
+  width: 1000px;
+} 
+
+.header {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  margin-top: 50px;
+}
+
+.Link {
+  background: #c3073F;
+  padding: 10px;
+  text-decoration: none;
+  color:#1A1A1D;
+  margin: 5px;
+  font-family: 'Source Sans 3', sans-serif;
+  font-weight: bold;
 }
 
 .mainPhoto {
@@ -84,20 +87,16 @@ li {
   box-shadow: 25px 20px 3px 10px #950740;
 }
 
-img {
-  background: white;
-  padding: 10px;
-}
-
 .main, .paragraph, nav, .smallHeaderTwo, .smallHeader {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
-
 
 nav {
   padding: 10px;
   margin-top: 15px;
+  flex-wrap: wrap;
 }
 
 .paragraph {
@@ -107,42 +106,316 @@ nav {
 }
 
 .smallHeader {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
   text-align: center;
-  margin-top: 20px;
 }
 
 .smallHeaderTwo {
   flex-direction: column;
+  align-items: center;
   text-align: center;
   padding: 15px;
-  background: grey;
 }
 
 .parSmall {
   width: 400px
 }
 
-.pic {
-  background: whitesmoke;
-}
-
 .btn {
   color:#c3073F;
   font-family: 'Source Sans 3', sans-serif;
+  font-size: 20px;
 }
-
-.par {
-  font-family: 'Source Sans 3', sans-serif;
-  color: whitesmoke;
-  font-size: 22px;
-} 
 
 .infoAllaTwo {
   font-family: 'Source Sans 3', sans-serif;
   font-size: 22px;
   background: #1A1A1D;
-  color: whitesmoke
+  color: antiquewhite
 }
+
+.destiny {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  margin: 10px;
+}
+
+.smallButton {
+  color:#1A1A1D;
+  background: #c3073F;
+  margin-top: 5px;
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 18px;
+  border: none;
+  padding: 5px;
+}
+
+.createPlan {
+  background: #4E4E50;
+  color: antiquewhite;
+  margin: 50px;
+}
+
+.cleanList {
+  background: antiquewhite;
+  width: 300px;
+  border: 3px solid #950740;
+}
+
+.contPar {
+  line-height: 2.5;
+  letter-spacing: 20%;
+  text-align: center;
+  margin: 10px;
+}
+
+.par, .contPar {
+  font-family: 'Source Sans 3', sans-serif;
+  color: antiquewhite;
+  font-size: 20px;
+} 
+
+.inputPlan {
+  background:#c3073F;
+}
+
+.iconBtn {
+  border: none;
+ }
+
+.addPlan {
+  background: antiquewhite;
+  padding: 3px;
+}
+
+.dish-card {
+  padding: 1%;
+  text-align: center;
+  flex-grow: 1;
+  flex-basis: 20%
+}
+
+.aboutDish {
+  padding: 10px;
+  background: #950740;
+}
+
+.mainBtn {
+  color:#c3073F;
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.musicBtn {
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 15px;
+  width:50%;
+  background: antiquewhite;
+  color: #4E4E50;
+}
+
+.musicBtn:hover {
+  color: #c3073F;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.mainButton {
+  color: #6F2232;
+  background: antiquewhite;
+  font-family: 'Source Sans 3', sans-serif;
+  border: none;
+  border-radius: 50%;
+  font-size: 15px;
+}
+
+.mainButton:hover {
+  color: antiquewhite;
+  background: #6F2232;
+  border: 2px solid antiquewhite;
+  border-radius: 20%;
+}
+
+.descriptionDishes {
+  font-family: 'Source Sans 3', sans-serif;
+  font-style: italic;
+  font-size: 20px;
+  background: antiquewhite;
+  color:#6F2232
+}
+
+.mainContImage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.photoFrame {
+  padding: 10px;
+  background: antiquewhite;
+}
+
+.advices {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  background: antiquewhite;
+}
+
+.infoJonna {
+  font-family: 'Source Sans 3', sans-serif;
+  color: antiquewhite;
+}
+
+.infoJonnaTwo {
+  font-family: 'Source Sans 3', sans-serif;
+  color:#1A1A1D
+}
+
+.selected {
+  color: greenyellow;
+}
+
+.default {
+  color: blueviolet;
+}
+
+@media all and (max-width:800px) {
+
+  .spaceCont {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .containerText {
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .containerTwo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  .info {
+    font-size: 18px;
+  } 
+
+  .containerThree {
+    margin-right: 20px;
+    margin-left: 20px;
+    padding: 0px;
+  }
+
+  .main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .parSmall {
+    width: 200px
+  }
+
+  .paragraph {
+    flex-direction: column;
+    text-align: center;
+   }
+
+   .photoDest {
+    width: 280px;
+    height: 180px;
+   }
+
+   .contPar {
+    width: 450px;
+    margin-top: 20px;
+    line-height: 1.5;
+    letter-spacing: 50%;
+  }
+
+  .videoJonna {
+    width: 500px
+  }
+
+  @media all and (max-width:500px) {
+    .carouselAlla {
+      height: 250px;
+      width: 350px;
+    }
+
+    .infoAllaTwo {
+      font-size: 16px;
+    }
+
+    .photoDest {
+      width: 220px;
+      height: 150px;
+    }
+
+   .contPar {
+      font-size: 15px;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+
+    h2 {
+      font-size: 18px;
+ 
+    }
+
+    h5 {
+      font-size: 16px;
+    }
+
+    .info, .par, li {
+      font-size: 15px;
+    }
+
+    .Link {
+      padding: 5px;
+      margin: 3px;
+      font-weight: bolder;
+    }
+
+    .photoJonna {
+      width: 300px;
+      height: 200px;
+    }
+
+    .videoJonna {
+      width: 350px
+    }
+
+    .homePhoto {
+      width: 300px
+    }
+
+  }
+
+
+
+
+
+
+
+   
+  
+  
+  
+}
+
 
 
 
