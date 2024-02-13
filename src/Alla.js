@@ -3,13 +3,7 @@ import image from "./photo/CanSheCode.jpg";
 import ControlledCarousel from "./ControlledCarousel";
 import MyTaskForLearn from "./MyTaskForLearn";
 import MyListTasks from "./myListTasks";
-
-
-
-
-
-
-
+import uuid from "react-uuid";
 
 
 function Alla() {
@@ -19,12 +13,11 @@ function Alla() {
 
     const addTask = () => {
       const newTask = {
-        title: "Today I'll learn ",
-        id:"",
-        MyTaskForLearn: ""
+        title: "I need to learn ",
+        id:uuid(),
+        taskForLearning: ""
       }
       setTaskPlans([newTask, ...taskPlans])
-      console.log(addTask);
     }
     const deleteTask = (taskId) => {
         setTaskPlans (taskPlans.filter(({id}) => id!==taskId))
@@ -40,7 +33,11 @@ function Alla() {
         setTaskPlans(updatedSmallTasks)
     }
 
- 
+    const [showMore, setShowMore] = useState(false)
+
+    const getActiveTask = () => {
+        return taskPlans.find(({id}) => id ===selectedTasks)
+    }
 
     return(
         <div>
@@ -49,16 +46,11 @@ function Alla() {
         </div>
         <div className="smallHeader">
             <img className="mainPhoto" src={image} alt="pic" width="250px" height="200px"/>
-            <p className="contPar">Many people today want to move into IT. 
-            If you are also thinking about this, 
-            but don’t know which direction to choose? 
-            Are you a humanitarian? 
-            Are you a woman and think that IT is a male-dominated field? 
-            If you are tormented by these and other questions, 
-            go to Alla’s Instagram page! Alla helps you get into IT at any age!
-            On her Instagram page you will learn news from the IT world, 
-            which specialties and programming languages ​​are most relevant at the moment.</p>
+            <p className="contPar"> {showMore? "Many people today want to move into IT. If you are also thinking about this, but don’t know which direction to choose? Are you a humanitarian?  Are you a woman and think that IT is a male-dominated field? If you are tormented by these and other questions, go to Alla’s Instagram page! Alla helps you get into IT at any age! On her Instagram page you will learn news from the IT world, which specialties and programming languages ​​are most relevant at the moment." : "Many people today want to move into IT."}
+            <br/><button className="mainButton" onClick={() => setShowMore(!showMore)}>{showMore ? "hide" : "show"}</button></p>
+           
           </div>
+          
        
             <div className="smallHeader spaceCont"> 
                 <h2>Here is some information from Alla's page</h2>
@@ -92,9 +84,9 @@ function Alla() {
                 />
             </div>
             <div className="smallHeader">
-                    <MyListTasks 
-                    selectedTasks={selectedTasks}
-                    updateTask={updateTask}/>
+                <MyListTasks 
+                selectedTasks={getActiveTask()}
+                updateTask={updateTask}/>
             </div>
             </div>
             <div className="smallHeader">

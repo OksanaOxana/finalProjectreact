@@ -9,11 +9,14 @@ import React from "react";
 import './App.css';
 import Katarina from "./Katarina";
 import Jonna from "./Jonna";
-import Olesya from "./Olesya";
+import Lesya from "./Lesya";
 import Home from "./Home";
 import Alla from "./Alla";
-import Tanja from "./Tanja";
+import Tanya from "./Tanya";
 import AboutDishes from "./aboutDishes";
+import AboutPhotoLesya from "./aboutPhotoLesya";
+import AboutPhotoLesyaTwo from "./aboutPhotoLesyaTwo";
+import AboutPhotoLesyaThree from "./aboutPhotoLesyaThree";
 
 
 function App() {
@@ -22,21 +25,24 @@ function App() {
     <div>
   <Router>
     <nav>
-    <Link className="Link" to="/">Home</Link>
+      <Link className="Link" to="/">Home</Link>
       <Link className="Link" to="/Katarina">Katarina Perotti</Link>
       <Link className="Link"to="/Jonna">Jonna Jinton</Link>
-      <Link className="Link" to="/Tanja">Tanya Romantsevich</Link>
-      <Link className="Link" to="/Olesya">Context photographer Lesya</Link>
+      <Link className="Link" to="/Tanya">Tanya Romantsevich</Link>
+      <Link className="Link" to="/Lesya">Content photographer Lesya</Link>
       <Link className="Link" to="/Alla">Alla CanSheCode</Link>
     </nav>
     <Routes>
-      <Route path="/about/:title" element = {<AboutDishes/>}/>
       <Route path="/" element = {<Home/>}/>
+      <Route path='/aboutPhotoLesyathree/:titleThree' element = {<AboutPhotoLesyaThree/>}/>
+      <Route path='/aboutPhotoLesyaTwo/:titleTwo' element = {<AboutPhotoLesyaTwo/>}/>
+      <Route path='/aboutPhotoLesya/:titleOne' element = {<AboutPhotoLesya/>}/>
+      <Route path="/aboutDishes/:title" element = {<AboutDishes/>}/>
       <Route path="/Katarina" element = {<Katarina/>}/>
       <Route path="/Jonna" element = {<Jonna/>}/>
-      <Route path="/Tanja" element = {<Tanja/>}/>
+      <Route path="/Tanya" element = {<Tanya/>}/>
       <Route path="/Alla" element = {<Alla/>}/>
-      <Route path="/Olesya" element = {<Olesya />}/>
+      <Route path="/Lesya" element = {<Lesya />}/>
     </Routes>
   </Router>
 
@@ -47,9 +53,9 @@ function App() {
       <li class="nav-item"><a href="/" class="nav-link px-2 text-light">Home</a></li>
       <li class="nav-item"><a href="/Katarina" class="nav-link px-2 text-light">Katarina Perotti</a></li>
       <li class="nav-item"><a href="/Jonna" class="nav-link px-2 text-light">Jonna Jinton</a></li>
-      <li class="nav-item"><a href="/Tanja" class="nav-link px-2 text-light">Tanya Romantsevich</a></li>
-      <li class="nav-item" ><a href="/Olesya" class="nav-link px-2 text-light">Context photographer Lesya</a></li>
-      <li class="nav-item" ><a href="/Alla" class="nav-link px-2 text-light">Alla CanSheCode</a></li>
+      <li class="nav-item"><a href="/Tanya" class="nav-link px-2 text-light">Tanya Romantsevich</a></li>
+      <li class="nav-item"><a href="/Lesya" class="nav-link px-2 text-light">Content photographer Lesya</a></li>
+      <li class="nav-item"><a href="/Alla" class="nav-link px-2 text-light">Alla CanSheCode</a></li>
     </ul>
     <h6 class="text-center text-body-light">Design and development: Butylava Aksana ©️2024 All rights reserved.</h6>
 

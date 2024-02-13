@@ -50,7 +50,7 @@ export const dataTwo = [
         dishToCook: sweetFour,
         nameDishes: 'Candies "Raffaello" ',
         classDishes:"no-bake",
-        title: "canies-rafaello",
+        title: "candies-rafaello",
         description: "Delicious homemade coconut sweets!"
     },
     {

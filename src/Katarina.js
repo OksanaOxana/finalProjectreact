@@ -1,27 +1,19 @@
 import image from "./photo/katarineOne.jpg";
-import imageOne from "./photo/kat1.jpg";
-import imageTwo from "./photo/kat2.jpg";
-import imageThree from "./photo/kat3.jpg";
-import imageFour from "./photo/kat4.jpg";
-import imageFive from "./photo/kat5.jpg";
-import imageSix from "./photo/kat6.jpg";
-import imageSeven from "./photo/kat7.jpg";
-import imageEight from "./photo/kat8.jpg";
-import imageTen from "./photo/kat10.jpg";
-import imageEleven from "./photo/kat11.jpg";
-import imageTwelve from "./photo/kat12.jpg";
-import imageThirteen from "./photo/kat13.jpg";
 import { data } from "./data";
 import { useState } from "react";
 import right from "./photo/iconRight.jpg";
 import left from "./photo/iconLeft.jpg";
 import React from "react";
+import { dataKatarina } from "./dataKatarina";
+import PhotoKatarinaPage from "./photoKatarinaPage";
+
 
 
 function Katarina() {
-    const [destinationToSee, setDestinationToSee] = useState(0)
-    const {id, destination, imageToSee} = data[destinationToSee]
-
+    const [destinationToSee, setDestinationToSee] = useState(0);
+    const {id, destination, imageToSee} = data[destinationToSee];
+    const [imageSicily, setImageSicily] = useState(dataKatarina);
+   
     const previousPlace = () => {
         setDestinationToSee((destinationToSee => {
             destinationToSee --;
@@ -43,7 +35,6 @@ function Katarina() {
     }
     const [placesToVisit, setPlacesToVisit] = useState(data)
     const removePlace = (id) => {
-        console.log(id)
         let newPlacesToVisit = placesToVisit.filter((item => item.id!==id))
      
         setPlacesToVisit(newPlacesToVisit)
@@ -68,42 +59,14 @@ function Katarina() {
             <div className="smallHeader">
                 <h3>Here's some information from Katya's Instagram page</h3>
             </div>
-            <div className="smallHeader smallHeaderTwo">
-           
-                <img className="photoFrame " src={imageOne} alt="pic" width="300px" height="280px"/>
-                <img className="photoFrame " src={imageTwo} alt="pic" width="300px" height="280px"/>
 
-                <img className="photoFrame " src={imageThree} alt="pic" width="300px" height="280px"/>
-                <img className="photoFrame " src={imageFour} alt="pic" width="300px" height="280px"/>
-            
-            </div>
-            <div className="smallHeader smallHeaderTwo">
-          
-                <img className="photoFrame " src={imageFive} alt="pic" width="300px"height="280px" />
-                <img className="photoFrame " src={imageSix} alt="pic" width="300px" height="280px"/>
+            <PhotoKatarinaPage anyPhotosKatarinaPage = {imageSicily} anyButtonClickImageSicily = {setImageSicily}/>
 
-                <img className="photoFrame " src={imageSeven} alt="pic" width="300px" height="280px"/>
-                <img className="photoFrame " src={imageEight} alt="pic" width="300px" height="280px"/>
-            
-            </div>
-            <div className="smallHeader smallHeaderTwo">
-       
-                <img className="photoFrame " src={imageTen} alt="pic" width="300px"height="280px" />
-                <img className="photoFrame " src={imageEleven} alt="pic" width="300px" height="280px"/>
-
-                <img className="photoFrame " src={imageTwelve} alt="pic" width="300px" height="280px"/>
-                <img className="photoFrame "src={imageThirteen} alt="pic" width="300px"height="280px" />
-   
-            </div>
             <div className="smallHeader">
                 <p className="info">On Katya's page you can see not only 
                     stunning views of Sicily. 
                     Katya also shares interesting facts about life in Italy. 
-                    For example, if you are the owner of several houses and 
-                    have allowed tenants into the house, 
-                    then you are not insured against 
-                    the fact that your tenants may become occupiers! 
-                    And the law will be on the side of these occupiers!</p>
+                    </p>
             </div>
        
             <div className="smallHeader createPlan">
@@ -155,8 +118,8 @@ function Katarina() {
             <button className="btn cleanList"onClick={() => setPlacesToVisit([])}>Clean list</button>
         </div>
         <div className="smallHeader">
-                        <h3>Have a nice trip!</h3>
-                </div>
+            <h3>Have a nice trip!</h3>
+        </div>
     </div>
         
     )

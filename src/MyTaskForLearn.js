@@ -9,7 +9,7 @@ const MyTaskForLearn = ({taskPlans, addTask, deleteTask, selectedTasks, setSelec
             </div>
             
                 {taskPlans.map(({id, title, taskForLearning}) => (
-                <div >  
+                <div className="createdPlan">  
                     <div className={`task ${id===selectedTasks ? "selected" : "default"}`} onClick = {() =>setSelectedTasks(id)}>  
                         <p>{title}</p>
                         <p>{taskForLearning}</p>

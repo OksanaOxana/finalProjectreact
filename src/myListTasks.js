@@ -8,21 +8,24 @@ const MyListTasks = ({selectedTasks, updateTask}) => {
     return(
         <div>
             <div className="smallHeader">
+            <h3>Write down your tasks in detail</h3>
+            </div>
+            <div className="smallHeader">
                 <input
                 type="text" 
-                placeholder="Today I'll learn"
+                placeholder="I need to learn "
                 onChange={(e) =>editMyTask("title", e.target.value)}
                 id = "title"
                 value = {selectedTasks.title}
-                className="inputPlan"
+                className="inputTask"
                
                 />
             </div>
             <div className="smallHeader">
                 <textarea 
-                className = "inputPlan"
+                className = "inputTaskTwo"
                 placeholder = "Describe the tasks"
-                id = "taskForLearning"
+                id = " MyTaskForLearn"
                 value = {selectedTasks.taskForLearning}
                 onChange = {(e) => editMyTask("taskForLearning", e.target.value)}
                 />

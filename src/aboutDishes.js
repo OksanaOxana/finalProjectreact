@@ -10,20 +10,21 @@ function AboutDishes() {
             {dataTwo.filter((item) => item.title === title).map((elem, index) => {
                 return (
                     <div>
-                    <div className="smallHeader" key={index}>
-                        <h3>{elem.nameDishes}</h3>
+                        <div className="smallHeader" key={index}>
+                            <h3>{elem.nameDishes}</h3>
                         </div> 
                         <div className="smallHeader" key={index}>
-                        <img className="aboutDish" src={elem.dishToCook} alt="pic" width="500px"/>
+                            <img className="aboutDish" src={elem.dishToCook} alt="pic" width="500px"/>
                         </div>
-                         <div className="smallHeader" key={index}>
-                        <p className="descriptionDishes">{elem.description}</p>
+                        <div className="smallHeader" key={index}>
+                            <p className="descriptionItems spaceCont">{elem.description}</p>
                         </div> 
                         <div className="smallHeader" key={index}>
-                        <button className="smallButton" onClick={() => navigate(-1)}>
-                            Go back
-                        </button>
-                    </div></div>
+                            <button className="smallButton" onClick={() => navigate(-1)}>
+                                Go back
+                            </button>
+                        </div>
+                    </div>
                 )
             })}
         </div>

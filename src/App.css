@@ -30,20 +30,14 @@ h5 {
 
 .info {
   font-family: 'Source Sans 3', sans-serif;
-  color: #6F2232;
+  color:#4E4E50;
   font-size: 22px;
   width: 1000px;
 } 
 
-.header {
-  display: flex;
-  justify-content: center;
-  padding: 10px;
-  margin-top: 50px;
-}
 
 .Link {
-  background: #c3073F;
+  background:#6F2232;
   padding: 10px;
   text-decoration: none;
   color:#1A1A1D;
@@ -56,28 +50,6 @@ h5 {
   border: solid 5px #6F2232;
 }
 
-.containerMain {
-  display: flex;
-  flex-direction: column;
-}
-
-.containerTwo {
-  display: flex;
-  padding: 10px;
-}
-
-.containerText {
-  display: flex;
-  align-items: center;
-  padding: 20px;
-}
-
-.containerThree {
-  display: flex;
-  text-align: center;
-  margin: 20px;
-  padding: 10px;
-}
 
 li {
   font-family: 'Lora', serif;
@@ -87,7 +59,7 @@ li {
   box-shadow: 25px 20px 3px 10px #950740;
 }
 
-.main, .paragraph, nav, .smallHeaderTwo, .smallHeader {
+.main, .paragraph, nav, .smallHeaderTwo, .smallHeader, header {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -112,6 +84,12 @@ nav {
   text-align: center;
 }
 
+.header {
+  text-align: center;
+  margin-top: 70px;
+  flex-wrap: wrap;
+}
+
 .smallHeaderTwo {
   flex-direction: column;
   align-items: center;
@@ -119,19 +97,16 @@ nav {
   padding: 15px;
 }
 
-.parSmall {
-  width: 400px
-}
-
 .btn {
   color:#c3073F;
   font-family: 'Source Sans 3', sans-serif;
   font-size: 20px;
+  border: 1px solid #c3073F
 }
 
 .infoAllaTwo {
   font-family: 'Source Sans 3', sans-serif;
-  font-size: 22px;
+  font-size: 20px;
   background: #1A1A1D;
   color: antiquewhite
 }
@@ -181,6 +156,19 @@ nav {
 
 .inputPlan {
   background:#c3073F;
+  padding: 5px;
+}
+
+.inputTask {
+  background:#6F2232;
+  color: antiquewhite;
+  padding: 10px;
+}
+
+.inputTaskTwo {
+  background:#4E4E50;
+  color: antiquewhite;
+  padding: 30px;
 }
 
 .iconBtn {
@@ -192,11 +180,16 @@ nav {
   padding: 3px;
 }
 
-.dish-card {
+.item-card {
   padding: 1%;
   text-align: center;
   flex-grow: 1;
-  flex-basis: 20%
+  flex-basis: 10%
+}
+
+.main-item {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .aboutDish {
@@ -241,10 +234,11 @@ nav {
   border-radius: 20%;
 }
 
-.descriptionDishes {
+.descriptionItems {
   font-family: 'Source Sans 3', sans-serif;
   font-style: italic;
   font-size: 20px;
+  padding: 10px;
   background: antiquewhite;
   color:#6F2232
 }
@@ -277,12 +271,39 @@ nav {
   color:#1A1A1D
 }
 
+.videoJonna {
+  border: antiquewhite solid 5px;
+  border-radius: 50%;
+}
+
 .selected {
-  color: greenyellow;
+  background:#6F2232;
+  color: antiquewhite;
+  font-size: 20px;
+  font-family: 'Source Sans 3', sans-serif;
 }
 
 .default {
-  color: blueviolet;
+  color: #6F2232;
+  font-size: 20px;
+  font-family: 'Source Sans 3', sans-serif;
+}
+
+.createdPlan {
+  border:#c3073F solid 3px;
+}
+
+.photoTanya {
+  width:250px
+}
+
+.containerphotosLesya {
+  display: flex;
+  justify-content: center;
+}
+
+.photoLesya {
+  border: 3px solid antiquewhite;
 }
 
 @media all and (max-width:800px) {
@@ -290,18 +311,6 @@ nav {
   .spaceCont {
     margin-left: 20px;
     margin-right: 20px;
-  }
-
-  .containerText {
-    padding: 10px;
-    width: 100%;
-    text-align: center;
-  }
-
-  .containerTwo {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
   }
 
   h1 {
@@ -312,20 +321,10 @@ nav {
     font-size: 18px;
   } 
 
-  .containerThree {
-    margin-right: 20px;
-    margin-left: 20px;
-    padding: 0px;
-  }
-
   .main {
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-
-  .parSmall {
-    width: 200px
   }
 
   .paragraph {
@@ -338,6 +337,11 @@ nav {
     height: 180px;
    }
 
+   .smallHeader {
+    flex-direction: column;
+    text-align: center;
+   }
+
    .contPar {
     width: 450px;
     margin-top: 20px;
@@ -346,7 +350,24 @@ nav {
   }
 
   .videoJonna {
-    width: 500px
+    width: 500px;
+  }
+
+  .descriptionDishes {
+    font-size: 15px;
+  }
+
+  .addPlan {
+    padding: 0px;
+  }
+
+  .photoAdapted {
+    width: 400px;
+  }
+
+  .photoAdaptedKatarina {
+    width: 350px;
+    height: 320px;
   }
 
   @media all and (max-width:500px) {
@@ -356,7 +377,7 @@ nav {
     }
 
     .infoAllaTwo {
-      font-size: 16px;
+      font-size: 14px;
     }
 
     .photoDest {
@@ -364,7 +385,7 @@ nav {
       height: 150px;
     }
 
-   .contPar {
+    .contPar {
       font-size: 15px;
       margin-left: 10px;
       margin-right: 10px;
@@ -372,34 +393,38 @@ nav {
 
     h2 {
       font-size: 18px;
- 
     }
 
     h5 {
       font-size: 16px;
     }
 
-    .info, .par, li {
+    .info, .par, li,  .mainBtn {
       font-size: 15px;
     }
 
     .Link {
-      padding: 5px;
-      margin: 3px;
-      font-weight: bolder;
-    }
+        padding: 5px;
+        margin: 3px;
+        font-weight: bolder;
+      }
 
     .photoJonna {
+        width: 300px;
+        height: 200px;
+      }
+
+    .videoJonna,  .homePhoto,  .aboutDish {
+        width: 300px
+      }
+
+    .photoAdapted {
+      width: 250px;
+      }
+
+    .picInterests {
       width: 300px;
-      height: 200px;
-    }
-
-    .videoJonna {
-      width: 350px
-    }
-
-    .homePhoto {
-      width: 300px
+      height: 320px;
     }
 
   }

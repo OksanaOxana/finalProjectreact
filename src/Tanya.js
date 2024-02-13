@@ -10,7 +10,7 @@ import searchIcon from "./photo/search.jpg"
 
 
 
-function Tanja() {
+function Tanya() {
 
     const [dishes, setDishes] = useState(dataTwo);
     const chosenDishes = (classDishes) => {
@@ -76,9 +76,9 @@ function Tanja() {
           fetchData(ingr);
         }
       }, [wordSubmitted])
+
+      const [showMore, setShowMore] = useState(false)
     
-
-
     return(
         <div>
             <div className="smallHeader">
@@ -87,14 +87,8 @@ function Tanja() {
 
             <div className="smallHeader">
                 <img className="mainPhoto" src={image} alt="pic"width="250px"  height="200px"/>
-       
-                <p className="contPar">There are many culinary blogs, perhaps because a person cannot live without 
-                    food and eats 3 times a day. I would like to share this blog for the special
-                    energy of a girl blogger! There are so many different recipes on her channel 
-                    - baking and salads, soups and meat dishes, healthy eating and much more.
-                    It's amazing how many recipes you can create from the same ingredients!
-                    Tanya clearly explains how to prepare the dish and shows the exact proportions. 
-                    So, by cooking according to Tanya’s recipes, you will have a masterpiece dish!</p>
+                <p className="contPar">{showMore ? "There are many culinary blogs, perhaps because a person cannot live without food and eats 3 times a day. I would like to share this blog for the special energy of a girl blogger! There are so many different recipes on her channel - baking and salads, soups and meat dishes, healthy eating and much more. It's amazing how many recipes you can create from the same ingredients! Tanya clearly explains how to prepare the dish and shows the exact proportions. So, by cooking according to Tanya’s recipes, you will have a masterpiece dish!" : "There are many culinary blogs..."}
+                <br/><button className="mainButton" onClick={() => setShowMore(!showMore)}>{showMore ? "hide" : "show"}</button></p>
             </div>
             <div className="smallHeader">
                 <h3> Just look at these amazing dishes!</h3>
@@ -102,12 +96,12 @@ function Tanja() {
             <Buttons filteredDishes = {chosenDishes}/>
             <Dishes anyDishes = {dishes} />
             <div className="smallHeader spaceCont">
-                <h3>If you are looking for a good recipe, 
+                <h2>If you are looking for a good recipe, 
                     go to the y-tube channel “Cooking with Tanya” - 
-                    there are many excellent recipes there!</h3>
+                    there are many excellent recipes there!</h2>
             </div>
             <div className="smallHeader">
-                <img className="mainPhoto" src={photo} alt="pic" width="400px"/>
+                <img className="mainPhoto photoTanya" src={photo} alt="pic" width="400px"/>
             </div>
             <div className="smallHeader spaceCont">
                 <p className="info">
@@ -128,7 +122,7 @@ function Tanja() {
                     placeholder='Search...'
                     onChange = {myRecipeSearch} />
                     <button className="iconBtn">
-                        <img src = {searchIcon} alt ='pic' width="50px"/>
+                        <img src = {searchIcon} alt ='pic' width="37px"/>
                     </button>  
                 </form>
                 <div  className="smallHeader">
@@ -140,11 +134,9 @@ function Tanja() {
         <div className="smallHeader spaceCont">
             <h3>Create your culinary masterpiece according to your preferences!</h3>
         </div>
-
-    
     </div>
         
     )
 }
-export default Tanja;
+export default Tanya;
 
