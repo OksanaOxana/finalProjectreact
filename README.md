@@ -4,8 +4,8 @@
 
  <h3 align="center">My final project of React</h3>
 <div align="center">
-  <a href="https://github.com/OksanaOxana/finalProjectreact/blob/main/src/photo/photo_finalproject.jpg">
-    <img src="src/photo/photo_finalproject.jpg" alt="Logo" width="200" height="100">
+  <a href="https://github.com/OksanaOxana/finalProjectreact">
+    <img src="src/photo/photo_finalproject.jpg" alt="Logo" width="200" height="250">
   </a>
 </div> 
 
