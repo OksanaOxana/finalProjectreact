@@ -11,8 +11,8 @@ const MyTaskForLearn = ({taskPlans, addTask, deleteTask, selectedTasks, setSelec
                 {taskPlans.map(({id, title, taskForLearning}) => (
                 <div className="createdPlan">  
                     <div className={`task ${id===selectedTasks ? "selected" : "default"}`} onClick = {() =>setSelectedTasks(id)}>  
-                        <p>{title}</p>
-                        <p>{taskForLearning}</p>
+                        <p className="task">{title}</p>
+                        <p >{taskForLearning}</p>
                     </div>
                     <div className="smallHeader"> 
                         <button className="smallButton" onClick={() =>deleteTask(id)}>Delete</button>

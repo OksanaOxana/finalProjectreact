@@ -5,13 +5,32 @@ import video from "./videoV.mp4";
 import songJonna from "./jonna.ogg";
 import songJonnaTwo from "./jonnaTwo.ogg";
 import songJonnaThree from "./jonnaThree.ogg";
-import { useRef, useState } from "react";
-import PhotoJonna from "./photoJonna";
+import { useEffect, useRef, useState } from "react";
+import PhotoJonna from "./PhotoJonna";
 import { dataJonna } from "./dataJonna";
+import ButtonsJonna from "./buttonsJonna";
+
+import gsap from "gsap";
 
 function Jonna() {
-    const [photosJonna,setPhotosJonna] = useState(dataJonna)
-    const [musicJonnaPlay, setMusicJonnaPlay] = useState(true)
+    useEffect(() => {
+        const ctx = gsap.context (() => {
+            gsap.from('h1',{opacity: 0, duration: 1, delay: 1});
+            gsap.from('.mainPhoto',{x:-400, duration: 3, delay: 0.1});
+            gsap.from('.contPar',{x:400, duration: 3, delay: 0.1});
+            gsap.from('.musicBtn', {opacity: 0, duration: 4, delay: 2, repeat: -1, stagger: 0.8});
+            gsap.from('.mainBtn', {opacity: 0, duration: 4, delay: 2, repeat: -1, stagger: 0.8});
+        })
+        return() => ctx.revert()
+    }, [])
+
+    const [musicJonnaPlay, setMusicJonnaPlay] = useState(true);
+    const [photosJonna, setPhotoJonna] = useState(dataJonna);
+    const chosenPhotos = (classPhotos) => {
+        const newPhotos = dataJonna.filter(item =>item.classPhotos===classPhotos)
+        setPhotoJonna(newPhotos)
+    }
+
     const refAudio = useRef()
 
     const handlePlay = (song) => {
@@ -37,12 +56,13 @@ function Jonna() {
                 <p className="contPar">{showMore? "An amazing girl lives in the forests of Sweden!She is an artist, photographer, blogger, jewelry maker... She makes interesting videos and takes photos of Swedish nature. On her channel you can see many amazing photos and videos of Swedish nature, listen to singing ice, watch swimming in an ice hole at a temperature of -20 degrees,  she shows how to renovate a house with your own hands and much more. And she is a very positive, sincere and wonderful person!": "An amazing girl lives in the forests of Sweden!"}
                 <br/><button className="mainButton" onClick={() => setShowMore(!showMore)}>{showMore ? "hide" : "show"}</button></p>
             </div>
-            <div className="smallHeader spaceCont">
-                <h3>Just loot at these amazing photos of Sweden!</h3>
+            <div className="header spaceCont">
+                <h2>Just loot at these amazing photos of Sweden!</h2>
             </div>
 
 
-        <PhotoJonna anyPhotosjonna = {photosJonna} anyButtons = {setPhotosJonna}/>  
+        <PhotoJonna anyPhotosjonna = {photosJonna} />  
+        <ButtonsJonna filteredPhotos = {chosenPhotos} />
 
 
         <div className="header">
@@ -63,9 +83,6 @@ function Jonna() {
             <div className="header">  
                 <h2>Watch and enjoy</h2>
             </div> 
-
-
-
             <div className="smallHeader">
                 <p className="par">What an amazing natural phenomenon - the Northern Lights! 
                     It’s simply amazing how much fabulous beauty there is in the world!</p>
@@ -77,21 +94,20 @@ function Jonna() {
             </div>
             <div className="paragraph">
                 <div className="parSmall">
-                <audio 
-                loop = "loop"
-                ref = {refAudio}>
-                </audio>
-                {
-                [songJonna, songJonnaTwo, songJonnaThree].map((song, index)=> (
-                    <button
-                    key={index}
-                    className="musicBtn"
-                    onClick={()=> handlePlay(song)}
-                    >{musicJonnaPlay ? "Play Song" : "Pause"}</button>
-                ))
-            }
-               
-            </div>
+                    <audio 
+                    loop = "loop"
+                    ref = {refAudio}>
+                    </audio>
+                    {
+                    [songJonna, songJonnaTwo, songJonnaThree].map((song, index)=> (
+                        <button
+                        key={index}
+                        className="musicBtn"
+                        onClick={()=> handlePlay(song)}
+                        >{musicJonnaPlay ? "Play Song" : "Pause"}</button>
+                    ))
+                }
+               </div>
             </div>
             <div className="smallHeader spaceCont">
                 <h3>Jonna has even more interesting things on her page!</h3>

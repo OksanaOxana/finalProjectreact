@@ -1,15 +1,28 @@
 import image from "./photo/katarineOne.jpg";
 import { data } from "./data";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import right from "./photo/iconRight.jpg";
 import left from "./photo/iconLeft.jpg";
 import React from "react";
 import { dataKatarina } from "./dataKatarina";
-import PhotoKatarinaPage from "./photoKatarinaPage";
+import PhotoKatarinaPage from "./PhotoKatarinaPage";
+
+import gsap from "gsap"
 
 
 
 function Katarina() {
+    useEffect(() => {
+        const ctx = gsap.context (() => {
+            gsap.from('h1',{opacity: 0, duration: 1, delay: 1});
+            gsap.from('.mainPhoto',{x:-400, duration: 3, delay: 0.1});
+            gsap.from('.contPar',{x:400, duration: 3, delay: 0.1});
+            gsap.from('.smallButton', {opacity: 0, duration: 4, delay: 2, repeat: -1});
+            gsap.from('.kat',{opacity: 0, duration: 1.5, delay: 0.1, stagger: 0.6, repeat: -1});
+        })
+        return() => ctx.revert()
+    }, [])
+
     const [destinationToSee, setDestinationToSee] = useState(0);
     const {id, destination, imageToSee} = data[destinationToSee];
     const [imageSicily, setImageSicily] = useState(dataKatarina);

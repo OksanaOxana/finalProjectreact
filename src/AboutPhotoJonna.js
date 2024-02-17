@@ -1,20 +1,21 @@
 import { useParams, useNavigate } from "react-router-dom";
-import { dataLesya } from "./dataLesya";
+import { dataJonna } from "./dataJonna";
 
-function AboutPhotoLesya() {
+function AboutPhotoJonna() {
     const navigate = useNavigate();
-    const {titleOne} = useParams()
+    const {titleImage} = useParams()
 
     return (
         <div>
-            {dataLesya.filter((item) => item.titleOne === titleOne).map((elem, index) => {
+            {dataJonna.filter((item) => item.titleImage === titleImage).map((elem, index) => {
                 return (
-                    <div > 
+                    <div>
+
                         <div className="smallHeader" key={index}>
-                            <img className="photoFrame photoAdapted" src={elem.imageLesyaPage} alt="pic" width="350px"/>
+                            <img className="photoFrame photoAdapted" src={elem.imageJonna} alt="pic" width="500px"/>
                         </div>
                         <div className="smallHeader" key={index}>
-                            <p className="descriptionItems">{elem.description}</p>
+                            <p className="descriptionItems spaceCont">{elem.description}</p>
                         </div> 
                         <div className="smallHeader" key={index}>
                             <button className="smallButton" onClick={() => navigate(-1)}>
@@ -27,4 +28,4 @@ function AboutPhotoLesya() {
         </div>
     )
 }
-export default AboutPhotoLesya;
+export default AboutPhotoJonna;

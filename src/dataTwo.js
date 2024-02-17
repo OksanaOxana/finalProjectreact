@@ -25,7 +25,7 @@ export const dataTwo = [
         dishToCook: sweetOne, 
         nameDishes: "Pink marshmallow",
         classDishes: "berries",
-        title: "pink-marshmallow", 
+        titleDishes: "pink-marshmallow", 
         description: "Soft, springy and delicious strawberry marshmallows!"
     },
     {
@@ -33,7 +33,7 @@ export const dataTwo = [
         dishToCook: sweetTwo, 
         nameDishes: "Chocolate sausage", 
         classDishes: "chocolate",
-        title: "chocolate-sausage",
+        titleDishes: "chocolate-sausage",
         description: "Dessert from childhood! Chocolate lovers will not remain indifferent!"
 
     },
@@ -42,7 +42,7 @@ export const dataTwo = [
         dishToCook: sweetThree, 
         nameDishes: "Dried fruit candies",
         classDishes: "no-bake",
-        title: "dried-fruit-candies",
+        titleDishes: "dried-fruit-candies",
         description: "Without sugar, flour and butter. The perfect snack!"
     },
     {
@@ -50,7 +50,7 @@ export const dataTwo = [
         dishToCook: sweetFour,
         nameDishes: 'Candies "Raffaello" ',
         classDishes:"no-bake",
-        title: "candies-rafaello",
+        titleDishes: "candies-rafaello",
         description: "Delicious homemade coconut sweets!"
     },
     {
@@ -58,7 +58,7 @@ export const dataTwo = [
         dishToCook: sweetFive,
         nameDishes: "Chocolate-coffee pie ",
         classDishes: "chocolate", 
-        title: "chocolate-coffee-pie",
+        titleDishes: "chocolate-coffee-pie",
         description: "The rich taste of chocolate, soft structure of the cake, impregnation with notes of coffee will give chocolate lovers real pleasure!"
         
     },
@@ -67,7 +67,7 @@ export const dataTwo = [
         dishToCook: sweetSix, 
         nameDishes: "Red velvet",
         classDishes: "cake",
-        title:"red-velvet",
+        titleDishes:"red-velvet",
         description: "The famous red velvet cake. Will decorate a holiday table for any occasion!"
 
     },
@@ -76,7 +76,7 @@ export const dataTwo = [
         dishToCook: sweetSeven, 
         nameDishes: "Bird's milk cake",
         classDishes: "cake",
-        title: "bird's-milk",
+        titleDishes: "bird's-milk",
         description: "The famous Bird's Milk cake! It's easy to prepare, and the results are amazing!"
     },
     {
@@ -84,7 +84,7 @@ export const dataTwo = [
         dishToCook: sweetEight, 
         nameDishes: "Nut Cake",
         classDishes: "cake",
-        title: "nut cake",
+        titleDishes: "nut cake",
         description: "This nut cake is reminiscent of a soft roast. To all nut lovers!"
     },
     {
@@ -92,7 +92,7 @@ export const dataTwo = [
         dishToCook: sweetNine, 
         nameDishes: "Apricot pie",
         classDishes: "pie",
-        title: "apricot-pie",
+        titleDishes: "apricot-pie",
         description: "For cottage cheese lovers. The pie just melts in your mouth!"
     },
     {
@@ -100,7 +100,7 @@ export const dataTwo = [
         dishToCook: sweetTen,
         nameDishes: "Pie with berries",
         classDishes: "berries",
-        title: "pie-with-berries",
+        titleDishes: "pie-with-berries",
         description: "Delicious cottage cheese cake with a sweet-creamy aroma and delicate structure!"
     },
     {
@@ -108,7 +108,7 @@ export const dataTwo = [
         dishToCook: sweetEleven, 
         nameDishes: "Raffaello",
         classDishes: "cake",
-        title: "rafaello",
+        titleDishes: "rafaello",
         description: "The most delicious cake for coconut and almond lovers!"
     },
     {
@@ -116,7 +116,7 @@ export const dataTwo = [
         dishToCook: sweetTwelve, 
         nameDishes: "Cake with berries",
         classDishes: "berries",
-        title: "cake-with-berries",
+        titleDishes: "cake-with-berries",
         description: "Lazy honey cake! A simple and quick recipe for honey lovers!"
     
     },
@@ -125,7 +125,7 @@ export const dataTwo = [
         dishToCook: sweetThirteen, 
         nameDishes: "Milky girl",
         classDishes: "cake",
-        title: "milky-girl",
+        titleDishes: "milky-girl",
         description: "A soft and delicate cake with a variety of flavors and aromas!"
     },
     {
@@ -133,7 +133,7 @@ export const dataTwo = [
         dishToCook: sweetFourteen, 
         nameDishes: "Revani",
         classDishes: "pie",
-        title: "poppy-pie",
+        titleDishes: "poppy-pie",
         description: "For lovers of oriental sweets - Revani pie!"
     },
     {
@@ -141,7 +141,7 @@ export const dataTwo = [
         dishToCook: sweetFithteen, 
         nameDishes: "Plum pie",
         classDishes: "berries", 
-        title: "plum-pie",
+        titleDishes: "plum-pie",
         description: "Pie with plums and cottage cheese. Very tasty!"
     },
     {
@@ -149,7 +149,7 @@ export const dataTwo = [
         dishToCook: sweetSixteen, 
         nameDishes: "Cupcake",
         classDishes: "pie", 
-        title: "cupcake",
+        titleDishes: "cupcake",
         description: "The most delicious quick cupcake! Soft, fragrant and very tender!"
     },
     {
@@ -157,7 +157,7 @@ export const dataTwo = [
         dishToCook: sweetSeventeen, 
         nameDishes: "Berry pie",
         classDishes: "berries",
-        title: "berry-pie",
+        titleDishes: "berry-pie",
         description: "An amazing combination of airy sponge cake, delicate cream, fresh berries and jelly!"
     },
     {
@@ -165,7 +165,7 @@ export const dataTwo = [
         dishToCook: sweetEighteen, 
         nameDishes: "Marble cupcake",
         classDishes: "chocolate",
-        title: "marble-cupcake",
+        titleDishes: "marble-cupcake",
         description: "Delicious and tender cupcake with the addition of pumpkin. Gives a unique color!"
     },
     {
@@ -173,7 +173,7 @@ export const dataTwo = [
         dishToCook: sweetNineteen, 
         nameDishes: "Cinnamon buns",
         classDishes: "pie",
-        title: "cinnamon-rolls",
+        titleDishes: "cinnamon-rolls",
         description: "Incredibly delicious filled buns. A soft and fluffy pie made from simple ingredients!"
     },
     {
@@ -181,7 +181,7 @@ export const dataTwo = [
         dishToCook: sweetTwenty, 
         nameDishes: "Poppy roll",
         classDishes: "pie",
-        title: "poppy-pie-two",
+        titleDishes: "poppy-pie-two",
         description: "Butter roll with poppy seed filling. The dough is like fluff!"
     },
     {
@@ -189,7 +189,7 @@ export const dataTwo = [
         dishToCook: sweetTwentyOne, 
         nameDishes: "Chocolate pie",
         classDishes: "chocolate", 
-        title: "chocolate-pie",
+        titleDishes: "chocolate-pie",
         description: "Chocolate cake with soaking and glaze. Like a brownie!"
         },
 

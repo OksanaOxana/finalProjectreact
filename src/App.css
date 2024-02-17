@@ -2,19 +2,19 @@ body {
   background:#1A1A1D 
 }
 
-h1, h2, h3, h4 {
-  font-family: 'Lora', serif;
+h1 {
   background-image: linear-gradient(to top,#c3073F, #950740, #6F2232);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
-}
-
-h1 {
   font-size: 60px;
 }
 
-h6 {
+h2, h3, h4 {
   font-family: 'Lora', serif;
+  color: #c3073F;
+}
+
+h6 {
   color:#6F2232; 
   font-size: 14px;
 }
@@ -24,7 +24,6 @@ h3 {
 }
 
 h5 {
-  font-family: 'Lora', serif;
   color:#4E4E50
 }
 
@@ -34,7 +33,6 @@ h5 {
   font-size: 22px;
   width: 1000px;
 } 
-
 
 .Link {
   background:#6F2232;
@@ -49,7 +47,6 @@ h5 {
 .mainPhoto {
   border: solid 5px #6F2232;
 }
-
 
 li {
   font-family: 'Lora', serif;
@@ -177,7 +174,8 @@ nav {
 
 .addPlan {
   background: antiquewhite;
-  padding: 3px;
+  padding: 10px;
+
 }
 
 .item-card {
@@ -306,11 +304,20 @@ nav {
   border: 3px solid antiquewhite;
 }
 
+.task {
+  text-decoration: underline;
+}
+
 @media all and (max-width:800px) {
 
   .spaceCont {
     margin-left: 20px;
     margin-right: 20px;
+  }
+
+  .picInterests {
+    width: 300px;
+    height: 320px;
   }
 
   h1 {
@@ -337,11 +344,6 @@ nav {
     height: 180px;
    }
 
-   .smallHeader {
-    flex-direction: column;
-    text-align: center;
-   }
-
    .contPar {
     width: 450px;
     margin-top: 20px;
@@ -358,7 +360,7 @@ nav {
   }
 
   .addPlan {
-    padding: 0px;
+    padding: 3px;
   }
 
   .photoAdapted {
@@ -368,6 +370,10 @@ nav {
   .photoAdaptedKatarina {
     width: 350px;
     height: 320px;
+  }
+
+  .videoJonna,  .homePhoto,  .aboutDish {
+    width: 300px
   }
 
   @media all and (max-width:500px) {
@@ -414,17 +420,12 @@ nav {
         height: 200px;
       }
 
-    .videoJonna,  .homePhoto,  .aboutDish {
-        width: 300px
-      }
-
     .photoAdapted {
       width: 250px;
       }
 
-    .picInterests {
-      width: 300px;
-      height: 320px;
+    .photoLesya {
+      width:300px
     }
 
   }

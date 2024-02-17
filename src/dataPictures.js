@@ -9,7 +9,7 @@ export const dataPictures = [
         id: 1,
         pictureHome: imageOne,
         description: "Witty texts and vivid videos of Sicily",
-        linkOnPage:"`/Katarina`"
+        linkOnPage:"/Katarina"
     },
     {
         id: 2,

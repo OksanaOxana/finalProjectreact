@@ -1,12 +1,23 @@
 
-import { useState } from "react";
+import { useEffect } from "react";
 import { dataPictures } from "./dataPictures";
-import HomePictures from "./homePictures";
+import HomePictures from "./HomePictures";
 import image from "./photo/woman.jpg";
+
+import gsap from "gsap";
+
 
 
 function Home() {
-    const[imageBloggers, setImageBloggers] = useState(dataPictures);
+    useEffect(() => {
+        const ctx = gsap.context (() => {
+            gsap.from('h1', {y: -400, duration: 1, delay: 1});
+            gsap.from('.homePhoto', {opacity: 0, duration: 4, delay: 2});
+            gsap.from('.picInterests', {opacity: 0, duration: 4, delay: 2});
+            gsap.from('.btn', {opacity: 0, duration: 4, delay: 2, repeat: -1});
+        })
+        return() => ctx.revert()
+    }, [])
 
     return (
     <div>
@@ -34,7 +45,7 @@ function Home() {
                 and you can draw conclusions about what I am like!</h2> 
         </div>
 
-        <HomePictures anyHomePictures = {imageBloggers} anyButton = {setImageBloggers}/>
+        <HomePictures anyHomePictures = {dataPictures} />
   
         <div className="smallHeader spaceCont">
             <h2>These are very different people, but 

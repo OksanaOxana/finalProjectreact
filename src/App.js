@@ -5,7 +5,7 @@ import {
   Link
 } from "react-router-dom";
 
-import React from "react";
+import React, { useEffect } from "react";
 import './App.css';
 import Katarina from "./Katarina";
 import Jonna from "./Jonna";
@@ -13,13 +13,22 @@ import Lesya from "./Lesya";
 import Home from "./Home";
 import Alla from "./Alla";
 import Tanya from "./Tanya";
-import AboutDishes from "./aboutDishes";
-import AboutPhotoLesya from "./aboutPhotoLesya";
-import AboutPhotoLesyaTwo from "./aboutPhotoLesyaTwo";
-import AboutPhotoLesyaThree from "./aboutPhotoLesyaThree";
+import AboutDishes from "./AboutDishes";
+import AboutPhotoLesya from "./AboutPhotoLesya";
+import AboutPhotoLesyaTwo from "./AboutPhotoLesyaTwo";
+import AboutPhotoLesyaThree from "./AboutPhotoLesyaThree";
+import AboutPhotoJonna from "./AboutPhotoJonna";
+
+import gsap from "gsap"
 
 
 function App() {
+  useEffect(() => {
+    const ctx = gsap.context (() => {
+        gsap.from('.Link',{opacity: 0, duration: 3, delay: 1.5, stagger: 0.6, repeat: -1});
+    })
+    return() => ctx.revert()
+}, [])
 
   return (
     <div>
@@ -34,10 +43,11 @@ function App() {
     </nav>
     <Routes>
       <Route path="/" element = {<Home/>}/>
-      <Route path='/aboutPhotoLesyathree/:titleThree' element = {<AboutPhotoLesyaThree/>}/>
-      <Route path='/aboutPhotoLesyaTwo/:titleTwo' element = {<AboutPhotoLesyaTwo/>}/>
-      <Route path='/aboutPhotoLesya/:titleOne' element = {<AboutPhotoLesya/>}/>
-      <Route path="/aboutDishes/:title" element = {<AboutDishes/>}/>
+      <Route path="/:titleThree" element = {<AboutPhotoLesyaThree/>}/>
+      <Route path="/:titleTwo" element = {<AboutPhotoLesyaTwo/>}/>
+      <Route path="/:titleOne" element = {<AboutPhotoLesya/>}/>
+      <Route path="/:titleImage" element = {<AboutPhotoJonna/>}/>
+      <Route path="/:titleDishes" element = {<AboutDishes/>}/>
       <Route path="/Katarina" element = {<Katarina/>}/>
       <Route path="/Jonna" element = {<Jonna/>}/>
       <Route path="/Tanya" element = {<Tanya/>}/>

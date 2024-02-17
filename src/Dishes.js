@@ -8,7 +8,7 @@ function Dishes({anyDishes}) {
                 return(
                     <div className="item-card" key={id}>
                         <h3>{nameDishes}</h3>
-                        <Link to={`/aboutDishes/${item.title}`}>
+                        <Link to={`/${item.titleDishes}`}>
                         <img className="mainPhoto" src={dishToCook} alt="pic" width = "250px"/>
                         </Link>
                     </div>

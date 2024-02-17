@@ -2,15 +2,27 @@ import { useState, useEffect } from "react";
 import image from "./photo/tanjaKulinarim.jpg"
 import { dataTwo } from "./dataTwo";
 import Dishes from "./Dishes";
-import Buttons from "./buttons";
+import Buttons from "./Buttons";
 import photo from "./photo/tanja22.jpg";
 import Swal from 'sweetalert2';
-import searchIcon from "./photo/search.jpg"
+import searchIcon from "./photo/search.jpg";
+
+import gsap from "gsap"
 
 
 
 
 function Tanya() {
+  useEffect(() => {
+    const ctx = gsap.context (() => {
+        gsap.from('h1',{opacity: 0, duration: 1, delay: 1});
+        gsap.from('.mainPhoto',{x:-400, duration: 3, delay: 0.1});
+        gsap.from('.contPar',{x:400, duration: 3, delay: 0.1});
+        gsap.from('.item-card',{opacity: 0, duration: 1.5, delay: 0.1, stagger: 0.6, repeat: -1});
+        gsap.from('.mainBtn',{opacity: 0, duration: 1.5, delay: 0.1, stagger: 0.6, repeat: -1});
+    })
+    return() => ctx.revert()
+}, [])
 
     const [dishes, setDishes] = useState(dataTwo);
     const chosenDishes = (classDishes) => {

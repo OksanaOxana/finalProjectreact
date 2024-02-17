@@ -9,7 +9,7 @@ function PhotoKatarinaPage({anyPhotosKatarinaPage, anyButtonClickImageSicily}) {
         <div className="smallHeader" key={id}>
             <img className="photoFrame  photoAdaptedKatarina" src={imageKatarinaPage} alt="pic" width="500px" height="480px"/>     
         </div>
-        <div className="smallHeader">
+        <div className="smallHeader kat">
             <p className="par spaceCont ">{description}</p>
         </div>    
     </div>

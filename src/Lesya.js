@@ -1,18 +1,29 @@
 import image from "./photo/lisenok.jpg";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { dataLesya } from "./dataLesya";
 import { dataLesyaTwo } from "./dataLesyaTwo";
 import { dataLesyaThree } from "./dataLesyaThree";
 import photo from "./photo/lesya1.jpg";
-import PhotoLesya from "./photoLesya";
-import PhotoLesyaTwo from "./photoLesyaTwo";
-import PhotoLesyaThree from "./photoLesyaThree";
+import PhotoLesya from "./PhotoLesya";
+import PhotoLesyaTwo from "./PhotoLesyaTwo";
+import PhotoLesyaThree from "./PhotoLesyaThree";
+
+import gsap from "gsap"
 
 function Lesya() {
+    useEffect(() => {
+        const ctx = gsap.context (() => {
+            gsap.from('h1',{opacity: 0, duration: 1, delay: 1});
+            gsap.from('.mainPhoto',{x:-400, duration: 3, delay: 0.1});
+            gsap.from('.contPar',{x:400, duration: 3, delay: 0.1});
+            gsap.from('.photoLesya',{opacity: 0, duration: 5, delay: 1, repeat: -1});
+            gsap.from('.quota',{rotation:360, duration: 3, delay: 5, repeat: -1});
+            gsap.from('.smallButton', {opacity: 0, duration: 4, delay: 2, repeat: -1});
+        })
+        return() => ctx.revert()
+    }, [])
+
     const [advice, setAdvice] = useState("");
-    const [photosLesya, setPhotosLesya] = useState(dataLesya);
-    const [photosLesyaTwo, setPhotosLesyaTwo] = useState(dataLesyaTwo);
-    const [photosLesyaThree, setPhotosLesyaThree] = useState(dataLesyaThree);
    
         const getAdvice = async() => {
         const response = await fetch(`https://api.adviceslip.com/advice`);
@@ -38,16 +49,16 @@ function Lesya() {
             <div className="smallHeader">
                 <p className="contPar">Today Lesya is a marketer for a chain of confectionery-bakeries. One of them is BRIOCHE</p>
             </div>
-            <PhotoLesya anyPhotosLesya = {photosLesya} anyButtonClick = {setPhotosLesya}/>
+            <PhotoLesya anyPhotosLesya = {dataLesya}/>
             <div className="smallHeader">
                 <p className="contPar">She makes videos and photos for a flower shop</p>
             </div>
-            <PhotoLesyaTwo anyPhotosLesyaTwo = {photosLesyaTwo} anyButtonClickTwo = {setPhotosLesyaTwo} />
+            <PhotoLesyaTwo anyPhotosLesyaTwo = {dataLesyaTwo} />
 
             <div className="smallHeader">
                 <p className="contPar">Filming content for personal and expert blogs, provides advice on blogging </p>
             </div>
-            <PhotoLesyaThree anyPhotosLesyaThree = {photosLesyaThree} anyButtonClickThree = {setPhotosLesyaThree} />
+            <PhotoLesyaThree anyPhotosLesyaThree = {dataLesyaThree} />
 
             <div className="smallHeader spaceCont">
                 <p className="info">Among other things, Lesya is a very cheerful and bright person. 
@@ -61,7 +72,7 @@ function Lesya() {
             </div>
             <div className="advices">
                 <div className="smallHeader">
-                    <h2>Some motivational quotes</h2>
+                    <h2 className="quota">Some motivational quotes</h2>
                 </div>
                 <div className="smallHeader">
                     <button className="smallButton" onClick={getAdvice}>Click here!</button> 

@@ -3,11 +3,11 @@ import { dataTwo } from "./dataTwo";
 
 function AboutDishes() {
     const navigate = useNavigate();
-    const {title} = useParams()
+    const {titleDishes} = useParams()
 
     return (
         <div>
-            {dataTwo.filter((item) => item.title === title).map((elem, index) => {
+            {dataTwo.filter((item) => item.titleDishes === titleDishes).map((elem, index) => {
                 return (
                     <div>
                         <div className="smallHeader" key={index}>

@@ -1,15 +1,31 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import image from "./photo/CanSheCode.jpg";
 import ControlledCarousel from "./ControlledCarousel";
 import MyTaskForLearn from "./MyTaskForLearn";
-import MyListTasks from "./myListTasks";
+import MyListTasks from "./MyListTasks";
 import uuid from "react-uuid";
+
+import gsap from "gsap"
 
 
 function Alla() {
+useEffect(() => {
+    const ctx = gsap.context (() => {
+        gsap.from('h1',{opacity: 0, duration: 1, delay: 1});
+        gsap.from('.mainPhoto',{x:-400, duration: 3, delay: 0.1});
+        gsap.from('.contPar',{x:400, duration: 3, delay: 0.1});
+        gsap.from('.trip', {y:-100, opacity: 0, repeat: -1, duration: 4, delay: 2})
+    })
+    return() => ctx.revert()
+}, [])
+
    
-    const [taskPlans, setTaskPlans] = useState([])
-    const [selectedTasks, setSelectedTasks] = useState (false)
+    const [taskPlans, setTaskPlans] = useState(localStorage.taskPlans ? JSON.parse(localStorage.taskPlans):[]);
+    const [selectedTasks, setSelectedTasks] = useState (false);
+    useEffect(() => {
+        localStorage.setItem("taskPlans", JSON.stringify(taskPlans))
+    }, [taskPlans])
+
 
     const addTask = () => {
       const newTask = {
@@ -90,7 +106,7 @@ function Alla() {
             </div>
             </div>
             <div className="smallHeader">
-                <h3>Don't be afraid to explore the magical world of IT! 
+                <h3 className="trip">Don't be afraid to explore the magical world of IT! 
                 With Alla this trip will be amazing!</h3>
             </div>
         </div>

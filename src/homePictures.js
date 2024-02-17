@@ -10,7 +10,8 @@ function HomePictures ({anyHomePictures}) {
                     <div className="item-card" key={id}>
                         <h5>{description}</h5>
                         <img className="picInterests photoFrame" src={pictureHome} alt="pic" width="400px" height="450px"/>
-                    <div className="parSmall">
+                        
+                    <div className="smallHeader">
                     <Link to={linkOnPage}>
                         <button className="btn">Click here</button>
                     </Link>

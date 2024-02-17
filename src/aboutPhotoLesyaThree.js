@@ -11,7 +11,7 @@ function AboutPhotoLesyaThree() {
                 return(
                     <div>
                         <div className="smallHeader" key={index}>
-                            <img className="photoFrame photoAdapted" src={elem.imageLesyaPageThree} alt="pic" width="500px"/>
+                            <img className="photoFrame photoAdapted" src={elem.imageLesyaPageThree} alt="pic" width="350px"/>
                         </div>
                         <div className="smallHeader" key={index}>
                             <p className="descriptionItems">{elem.description}</p>
