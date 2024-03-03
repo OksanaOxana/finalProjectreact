@@ -7,15 +7,21 @@ h1 {
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   font-size: 60px;
+  text-wrap: balance;
 }
 
-h2, h3, h4 {
+h2, h3 {
   font-family: 'Lora', serif;
   color: #c3073F;
+  text-wrap: balance;
+}
+
+h4, h6 {
+  color:#6F2232; 
+  text-wrap: balance;
 }
 
 h6 {
-  color:#6F2232; 
   font-size: 14px;
 }
 
@@ -24,15 +30,25 @@ h3 {
 }
 
 h5 {
-  color:#4E4E50
+  color:#4E4E50;
+  text-wrap: balance;
 }
 
 .info {
   font-family: 'Source Sans 3', sans-serif;
-  color:#4E4E50;
+  color: white;
+  background: #4E4E50;
+  padding: 5px;
   font-size: 22px;
   width: 1000px;
+  text-align: justify;
 } 
+
+.description {
+  font-family: 'Source Sans 3', sans-serif;
+  color: antiquewhite;
+  text-align: center;
+}
 
 .Link {
   background:#6F2232;
@@ -98,7 +114,7 @@ nav {
   color:#c3073F;
   font-family: 'Source Sans 3', sans-serif;
   font-size: 20px;
-  border: 1px solid #c3073F
+  border: 1px solid #c3073F;
 }
 
 .infoAllaTwo {
@@ -141,7 +157,7 @@ nav {
 .contPar {
   line-height: 2.5;
   letter-spacing: 20%;
-  text-align: center;
+  text-align: justify;
   margin: 10px;
 }
 
@@ -149,6 +165,7 @@ nav {
   font-family: 'Source Sans 3', sans-serif;
   color: antiquewhite;
   font-size: 20px;
+  text-wrap: balance;
 } 
 
 .inputPlan {
@@ -201,6 +218,7 @@ nav {
   font-size: 20px;
   margin-bottom: 20px;
 }
+
 
 .musicBtn {
   font-family: 'Source Sans 3', sans-serif;
@@ -308,6 +326,10 @@ nav {
   text-decoration: underline;
 }
 
+.infoKatarina {
+  background: #4E4E50;
+}
+
 @media all and (max-width:800px) {
 
   .spaceCont {
@@ -384,6 +406,8 @@ nav {
 
     .infoAllaTwo {
       font-size: 14px;
+      padding: 0px;
+      text-wrap: balance;
     }
 
     .photoDest {

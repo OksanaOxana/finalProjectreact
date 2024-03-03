@@ -7,19 +7,18 @@ import {
 
 import React, { useEffect } from "react";
 import './App.css';
-import Katarina from "./Katarina";
-import Jonna from "./Jonna";
-import Lesya from "./Lesya";
-import Home from "./Home";
-import Alla from "./Alla";
-import Tanya from "./Tanya";
-import AboutDishes from "./AboutDishes";
-import AboutPhotoLesya from "./AboutPhotoLesya";
-import AboutPhotoLesyaTwo from "./AboutPhotoLesyaTwo";
-import AboutPhotoLesyaThree from "./AboutPhotoLesyaThree";
-import AboutPhotoJonna from "./AboutPhotoJonna";
+import Katarina from "./katarina/Katarina";
+import Jonna from "./jonna/Jonna";
+import Lesya from "./lesya/Lesya";
+import Home from "./home/Home";
+import Alla from "./alla/Alla";
+import Tanya from "./tanya/Tanya";
+import AboutDishes from "./tanya/AboutDishes";
+import AboutPhotoLesya from "./lesya/AboutPhotoLesya";
+import AboutPhotoJonna from "./jonna/AboutPhotoJonna";
 
 import gsap from "gsap"
+
 
 
 function App() {
@@ -43,11 +42,10 @@ function App() {
     </nav>
     <Routes>
       <Route path="/" element = {<Home/>}/>
-      <Route path="/:titleThree" element = {<AboutPhotoLesyaThree/>}/>
-      <Route path="/:titleTwo" element = {<AboutPhotoLesyaTwo/>}/>
-      <Route path="/:titleOne" element = {<AboutPhotoLesya/>}/>
-      <Route path="/:titleImage" element = {<AboutPhotoJonna/>}/>
-      <Route path="/:titleDishes" element = {<AboutDishes/>}/>
+
+      <Route path="/:title" element = {<AboutPhotoJonna/>}/>
+      <Route path="/:title" element = {<AboutDishes/>}/>
+      <Route path="/:title" element = {<AboutPhotoLesya />}/>
       <Route path="/Katarina" element = {<Katarina/>}/>
       <Route path="/Jonna" element = {<Jonna/>}/>
       <Route path="/Tanya" element = {<Tanya/>}/>
