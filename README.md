@@ -5,7 +5,7 @@
  <h3 align="center">My final project of React</h3>
 <div align="center">
   <a href="https://github.com/OksanaOxana/finalProjectreact">
-    <img src="https://github.com/OksanaOxana/my-portfolio/blob/main/photo_2023-08-19_13-54-31.jpg" alt="Logo" width="80" height="100">
+    <img src="src/photo/photo_finalproject.jpg" alt="Logo" width="200" height="250">
   </a>
 </div> 
 
