@@ -14,17 +14,16 @@ import Home from "./home/Home";
 import Alla from "./alla/Alla";
 import Tanya from "./tanya/Tanya";
 import AboutDishes from "./tanya/AboutDishes";
-import AboutPhotoLesya from "./lesya/AboutPhotoLesya";
-import AboutPhotoJonna from "./jonna/AboutPhotoJonna";
 
 import gsap from "gsap"
+import AboutPhoto from "./AboutPhoto";
 
 
 
 function App() {
   useEffect(() => {
     const ctx = gsap.context (() => {
-        gsap.from('.Link',{opacity: 0, duration: 3, delay: 1.5, stagger: 0.6, repeat: -1});
+        gsap.from('.Link',{opacity: 0, duration: 3, delay: 1.5, stagger: 0.6});
     })
     return() => ctx.revert()
 }, [])
@@ -35,22 +34,20 @@ function App() {
     <nav>
       <Link className="Link" to="/">Home</Link>
       <Link className="Link" to="/Katarina">Katarina Perotti</Link>
-      <Link className="Link"to="/Jonna">Jonna Jinton</Link>
+      <Link className="Link"to="/jonna">Jonna Jinton</Link>
       <Link className="Link" to="/Tanya">Tanya Romantsevich</Link>
-      <Link className="Link" to="/Lesya">Content photographer Lesya</Link>
+      <Link className="Link" to="/lesya">Content photographer Lesya</Link>
       <Link className="Link" to="/Alla">Alla CanSheCode</Link>
     </nav>
     <Routes>
       <Route path="/" element = {<Home/>}/>
-
-      <Route path="/:title" element = {<AboutPhotoJonna/>}/>
       <Route path="/:title" element = {<AboutDishes/>}/>
-      <Route path="/:title" element = {<AboutPhotoLesya />}/>
       <Route path="/Katarina" element = {<Katarina/>}/>
-      <Route path="/Jonna" element = {<Jonna/>}/>
+      <Route path="/jonna" element = {<Jonna/>}/>
       <Route path="/Tanya" element = {<Tanya/>}/>
       <Route path="/Alla" element = {<Alla/>}/>
-      <Route path="/Lesya" element = {<Lesya />}/>
+      <Route path="/lesya" element = {<Lesya />}/>
+      <Route path="/name/:title" element = {<AboutPhoto/>}/>
     </Routes>
   </Router>
 

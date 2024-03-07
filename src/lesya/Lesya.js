@@ -1,11 +1,12 @@
 import image from "../photo/lisenok.jpg";
 import { useEffect, useState } from "react";
-import { dataLesya } from "./dataLesya";
+
 import photo from "../photo/lesya1.jpg";
-import PhotoLesya from "./PhotoLesya";
+
 import gsap from "gsap"
 import ControlledCarouselLesya from "./ControlledCarouselLesya";
 import ControlledCarouselLesyaSecond from "./ControlledCarouselLesyaSecond";
+import Photos from "../Photos";
 
 function Lesya() {
     useEffect(() => {
@@ -62,7 +63,7 @@ function Lesya() {
             <div className="smallHeader">
                 <h3>She makes videos and photos for a flower shop</h3>
             </div>
-            <PhotoLesya anyPhotosLesya = {dataLesya} />
+            <Photos name = {'lesya'} />
 
             <div className="smallHeader">
                 <h4>Filming content for personal and expert blogs, provides advice on blogging </h4>

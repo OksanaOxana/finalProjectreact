@@ -187,7 +187,7 @@ nav {
 
 .iconBtn {
   border: none;
- }
+}
 
 .addPlan {
   background: antiquewhite;
@@ -290,6 +290,17 @@ nav {
 .videoJonna {
   border: antiquewhite solid 5px;
   border-radius: 50%;
+}
+
+.check {
+  font-family: 'Source Sans 3', sans-serif;
+  color: antiquewhite;
+  padding: 10px;
+  margin: 10px;
+}
+
+.checkContainer {
+  background: #c3073F;
 }
 
 .selected {

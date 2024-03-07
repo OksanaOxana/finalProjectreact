@@ -6,11 +6,12 @@ import songJonna from "./jonna.ogg";
 import songJonnaTwo from "./jonnaTwo.ogg";
 import songJonnaThree from "./jonnaThree.ogg";
 import { useEffect, useRef, useState } from "react";
-import PhotoJonna from "./PhotoJonna";
-import { dataJonna } from "./dataJonna";
+
 import ButtonsJonna from "./ButtonsJonna";
 
 import gsap from "gsap";
+import { data } from "../data";
+import Photos from "../Photos";
 
 function Jonna() {
     useEffect(() => {
@@ -25,9 +26,14 @@ function Jonna() {
     }, [])
 
     const [musicJonnaPlay, setMusicJonnaPlay] = useState(true);
-    const [photosJonna, setPhotoJonna] = useState(dataJonna);
+    const [transition, setTransition] = useState("Welcome!");
+    const getTransition = () => {
+        const newTransition = transition + "https://www.youtube.com/@jonnajinton";
+        setTransition(newTransition)
+    }
+    const [photosJonna, setPhotoJonna] = useState(data);
     const chosenPhotos = (classPhotos) => {
-        const newPhotos = dataJonna.filter(item =>item.classPhotos===classPhotos)
+        const newPhotos = data.filter(item =>item.classPhotos===classPhotos)
         setPhotoJonna(newPhotos)
     }
 
@@ -61,8 +67,9 @@ function Jonna() {
             </div>
 
 
-        <PhotoJonna anyPhotosjonna = {photosJonna} />  
-        <ButtonsJonna filteredPhotos = {chosenPhotos} />
+
+        <ButtonsJonna filteredPhotos = {chosenPhotos} photos = {photosJonna} />
+        <Photos  name = {'jonna'}/>
 
 
         <div className="header">
@@ -112,7 +119,14 @@ function Jonna() {
             <div className="smallHeader spaceCont">
                 <h3>Jonna has even more interesting things on her page!</h3>
             </div>
-                
+            <form className="smallHeader checkContainer">
+                <span className="par">I want to go to Jonna's y-tube channel</span>
+                <input onClick={() =>getTransition} type= "checkbox" className="check"/>
+            </form>    
+            <div className="smallHeader">
+                <h2>{transition}</h2>
+            </div>
+
         </div>
     )
 }
