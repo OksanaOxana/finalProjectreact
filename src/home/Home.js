@@ -5,6 +5,7 @@ import HomePictures from "./HomePictures";
 import image from "../photo/woman.jpg";
 
 import gsap from "gsap";
+import ContactForm from "./Form";
 
 
 
@@ -52,6 +53,14 @@ function Home() {
                 they have one thing in common - 
                 each of them is trying to make 
                 the world a better place in their own way!</h2>
+        </div>
+        <div className="containerForm">
+            <div className="smallHeader">
+                <h3>I'm interested in your opinion!</h3>
+            </div>
+            <div className="smallHeader">
+                <ContactForm />
+            </div>
         </div>
     </div>
 

@@ -14,9 +14,9 @@ import Home from "./home/Home";
 import Alla from "./alla/Alla";
 import Tanya from "./tanya/Tanya";
 import AboutDishes from "./tanya/AboutDishes";
-
 import gsap from "gsap"
 import AboutPhoto from "./AboutPhoto";
+
 
 
 
@@ -33,40 +33,37 @@ function App() {
   <Router>
     <nav>
       <Link className="Link" to="/">Home</Link>
-      <Link className="Link" to="/Katarina">Katarina Perotti</Link>
+      <Link className="Link" to="/katarina">Katarina Perotti</Link>
       <Link className="Link"to="/jonna">Jonna Jinton</Link>
-      <Link className="Link" to="/Tanya">Tanya Romantsevich</Link>
+      <Link className="Link" to="/tanya">Tanya Romantsevich</Link>
       <Link className="Link" to="/lesya">Content photographer Lesya</Link>
-      <Link className="Link" to="/Alla">Alla CanSheCode</Link>
+      <Link className="Link" to="/alla">Alla CanSheCode</Link>
     </nav>
     <Routes>
       <Route path="/" element = {<Home/>}/>
       <Route path="/:title" element = {<AboutDishes/>}/>
-      <Route path="/Katarina" element = {<Katarina/>}/>
+      <Route path="/katarina" element = {<Katarina/>}/>
       <Route path="/jonna" element = {<Jonna/>}/>
-      <Route path="/Tanya" element = {<Tanya/>}/>
-      <Route path="/Alla" element = {<Alla/>}/>
+      <Route path="/tanya" element = {<Tanya/>}/>
+      <Route path="/alla" element = {<Alla/>}/>
       <Route path="/lesya" element = {<Lesya />}/>
-      <Route path="/name/:title" element = {<AboutPhoto/>}/>
+      <Route path="/:name/:title" element = {<AboutPhoto/>}/>
     </Routes>
-  </Router>
 
-
-
-    <footer class="py-3 my-4">
-    <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-      <li class="nav-item"><a href="/" class="nav-link px-2 text-light">Home</a></li>
-      <li class="nav-item"><a href="/Katarina" class="nav-link px-2 text-light">Katarina Perotti</a></li>
-      <li class="nav-item"><a href="/Jonna" class="nav-link px-2 text-light">Jonna Jinton</a></li>
-      <li class="nav-item"><a href="/Tanya" class="nav-link px-2 text-light">Tanya Romantsevich</a></li>
-      <li class="nav-item"><a href="/Lesya" class="nav-link px-2 text-light">Content photographer Lesya</a></li>
-      <li class="nav-item"><a href="/Alla" class="nav-link px-2 text-light">Alla CanSheCode</a></li>
+    <footer className="py-3 my-4">
+    <ul className="nav justify-content-center border-bottom pb-3 mb-3">
+      <Link className="foot" to="/"><li className="nav-item px-2">Home</li></Link>
+      <Link className="foot" to="/katarina"><li className="nav-item px-2 text-light">Katarina Perotti</li></Link>
+      <Link className="foot" to="/jonna"><li className="nav-item px-2 text-light">Jonna Jinton</li></Link>
+      <Link className="foot" to="/tanya"><li className="nav-item px-2 text-light">Tanya Romantsevich</li></Link>
+      <Link className="foot" to="/lesya"><li className="nav-item px-2 text-light">Content photographer Lesya</li></Link>
+      <Link className="foot" to="/alla"><li className="nav-item px-2 text-light">Alla CanSheCode</li></Link>
     </ul>
-    <h6 class="text-center text-body-light">Design and development: Butylava Aksana ©️2024 All rights reserved.</h6>
+    <h6 className="text-center text-body-light">Design and development: Butylava Aksana ©️2024 All rights reserved.</h6>
 
-  <h6 class="text-center text-body-light">Site is created for educational purposes and does not constitute an actual offer.</h6>
+  <h6 className="text-center text-body-light">Site is created for educational purposes and does not constitute an actual offer.</h6>
   </footer>
- 
+ </Router>
   </div>
   );
 }

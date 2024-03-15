@@ -26,15 +26,16 @@ function Jonna() {
     }, [])
 
     const [musicJonnaPlay, setMusicJonnaPlay] = useState(true);
-    const [transition, setTransition] = useState("Welcome!");
+
+    const [transition, setTransition] = useState(false);
     const getTransition = () => {
-        const newTransition = transition + "https://www.youtube.com/@jonnajinton";
-        setTransition(newTransition)
+        setTransition(!transition)
     }
-    const [photosJonna, setPhotoJonna] = useState(data);
+    const [photosJonna, setPhotosJonna] = useState(data['jonna']);
     const chosenPhotos = (classPhotos) => {
-        const newPhotos = data.filter(item =>item.classPhotos===classPhotos)
-        setPhotoJonna(newPhotos)
+        console.log(setPhotosJonna)
+        const newPhotos = data['jonna'].filter(item =>item.classPhotos===classPhotos)
+        setPhotosJonna(newPhotos)
     }
 
     const refAudio = useRef()
@@ -59,7 +60,7 @@ function Jonna() {
 
             <div className="smallHeader">
                 <img className="mainPhoto" src={image} alt="pic" width="250px"  height="200px"/>
-                <p className="contPar">{showMore? "An amazing girl lives in the forests of Sweden!She is an artist, photographer, blogger, jewelry maker... She makes interesting videos and takes photos of Swedish nature. On her channel you can see many amazing photos and videos of Swedish nature, listen to singing ice, watch swimming in an ice hole at a temperature of -20 degrees,  she shows how to renovate a house with your own hands and much more. And she is a very positive, sincere and wonderful person!": "An amazing girl lives in the forests of Sweden!"}
+                <p className="contPar">{showMore? "An amazing girl lives in the forests of Sweden! She is an artist, photographer, blogger, jewelry maker... She makes interesting videos and takes photos of Swedish nature. On her channel you can see many amazing photos and videos of Swedish nature, listen to singing ice, watch swimming in an ice hole at a temperature of -20 degrees,  she shows how to renovate a house with your own hands and much more. And she is a very positive, sincere and wonderful person!": "An amazing girl lives in the forests of Sweden!"}
                 <br/><button className="mainButton" onClick={() => setShowMore(!showMore)}>{showMore ? "hide" : "show"}</button></p>
             </div>
             <div className="header spaceCont">
@@ -117,14 +118,17 @@ function Jonna() {
                </div>
             </div>
             <div className="smallHeader spaceCont">
-                <h3>Jonna has even more interesting things on her page!</h3>
+                <h3>Jonna has even more interesting things on her channel!</h3>
             </div>
             <form className="smallHeader checkContainer">
                 <span className="par">I want to go to Jonna's y-tube channel</span>
-                <input onClick={() =>getTransition} type= "checkbox" className="check"/>
+                <input onChange={getTransition} type= "checkbox" className="check"/>
             </form>    
             <div className="smallHeader">
-                <h2>{transition}</h2>
+                <h2>Welcome!</h2> 
+            </div>
+            <div className="smallHeader">    
+                <h6>{transition && "https://www.youtube.com/@jonnajinton"}</h6>
             </div>
 
         </div>

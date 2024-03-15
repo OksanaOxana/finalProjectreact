@@ -38,7 +38,7 @@ function Lesya() {
             <div className="smallHeader">
                 <img className="mainPhoto" src={image} alt="pic"width="250px"  height="200px"/>
             <p className="contPar">
-                {showMore ? "Brand visualizer and creative idea generator.Turnkey content shooting. From Olesya you can watch delicious videos for business!!! Olesya motivates well with her example of how you need to move forward towards your goal and not give up! She always wanted to do what she loved and she succeeded - her dream came true! Now Olesya is doing what she loves, working hard, learning a lot and is happy about it!" : "Brand visualizer and creative idea generator."}
+                {showMore ? "Brand visualizer and creative idea generator. Turnkey content shooting. From Olesya you can watch delicious videos for business!!! Olesya motivates well with her example of how you need to move forward towards your goal and not give up! She always wanted to do what she loved and she succeeded - her dream came true! Now Olesya is doing what she loves, working hard, learning a lot and is happy about it!" : "Brand visualizer and creative idea generator."}
                  <br/><button className="mainButton" onClick={() => setShowMore(!showMore)}>{showMore ? "hide" : "show"}</button></p>
             </div>
             <div className="smallHeader">

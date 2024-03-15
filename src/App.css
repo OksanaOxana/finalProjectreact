@@ -37,12 +37,32 @@ h5 {
 .info {
   font-family: 'Source Sans 3', sans-serif;
   color: white;
-  background: #4E4E50;
+  background:#4E4E50;
   padding: 5px;
   font-size: 22px;
   width: 1000px;
   text-align: justify;
 } 
+
+.footer {
+ background: #4e4e50;
+  text-decoration: none;
+}
+
+.foot {
+  text-decoration-line: none;
+  color: antiquewhite;
+}
+
+.infoTwo {
+  font-family: 'Source Sans 3', sans-serif;
+  color: white;
+  background:#4E4E50;
+  padding: 5px;
+  font-size: 25px;
+  width: 1000px;
+  text-align: center;
+}
 
 .description {
   font-family: 'Source Sans 3', sans-serif;
@@ -60,12 +80,47 @@ h5 {
   font-weight: bold;
 }
 
+
 .mainPhoto {
   border: solid 5px #6F2232;
 }
 
 li {
   font-family: 'Lora', serif;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.containerForm {
+  background-image: linear-gradient(to top,#4e4e50, antiquewhite);
+  text-wrap: balance;
+  padding: 10px;
+}
+
+.inputEmail {
+  border: none;
+  font-family: 'Source Sans 3', sans-serif;
+  padding: 10px;
+  background: antiquewhite;
+
+}
+
+.areaEmail {
+  border: none;
+  padding: 40px;
+  font-family: 'Source Sans 3', sans-serif;
+  background: #c3073F;
+}
+
+.areaEmail:focus {
+  background: antiquewhite
+}
+
+.inputEmail:focus {
+background:#c3073F
 }
 
 .divPhoto {
@@ -301,6 +356,8 @@ nav {
 
 .checkContainer {
   background: #c3073F;
+  padding: 10px;
+  margin: 0;
 }
 
 .selected {
@@ -448,11 +505,6 @@ nav {
         padding: 5px;
         margin: 3px;
         font-weight: bolder;
-      }
-
-    .photoJonna {
-        width: 300px;
-        height: 200px;
       }
 
     .photoAdapted {

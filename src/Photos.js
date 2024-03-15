@@ -11,7 +11,7 @@ function Photos({name}) {
                 return(
                 <div className="item-card" key={id}>
                     <Link to={`/${name}/${title}`}>
-                        <img className="photoFrame photoJonna" src={image} alt="pic" width="400px"  height="250px"/>
+                        <img className="photoFrame photoJonna" src={image} alt="pic" width="180px" height="150px"/>
                     </Link>
                 </div>
             )})}
