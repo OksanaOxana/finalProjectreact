@@ -14,7 +14,7 @@ import Home from "./home/Home";
 import Alla from "./alla/Alla";
 import Tanya from "./tanya/Tanya";
 import AboutDishes from "./tanya/AboutDishes";
-import gsap from "gsap"
+import gsap from "gsap";
 import AboutPhoto from "./AboutPhoto";
 
 

@@ -6,8 +6,9 @@ import Buttons from "./Buttons";
 import photo from "../photo/tanja22.jpg";
 import Swal from 'sweetalert2';
 import searchIcon from "../photo/search.jpg";
-
 import gsap from "gsap"
+import ListDishes from "./listDishes";
+
 
 
 
@@ -107,6 +108,11 @@ function Tanya() {
             </div>
             <Buttons filteredDishes = {chosenDishes}/>
             <Dishes anyDishes = {dishes} />
+            <div className="addPlan">
+              <div className="smallHeader">
+                <ListDishes />
+              </div>
+            </div>
             <div className="smallHeader spaceCont">
                 <h2>If you are looking for a good recipe, 
                     go to the y-tube channel “Cooking with Tanya” - 
@@ -127,7 +133,7 @@ function Tanya() {
                 <h3>Check the calorie content of your dishes</h3>
             </div>
             <div className="smallHeader">
-                <p className="info">If you want to know the calorie content of an ingredient, enter the name and quantity.</p>
+                <h6>If you want to know the calorie content of an ingredient, enter the name and quantity.</h6>
             </div>
                 <form  className="smallHeader" onSubmit={finalSearch}>
                     <input className="inputPlan" 

@@ -1,9 +1,21 @@
 import { useParams, useNavigate } from "react-router-dom";
 import { data } from "./data";
+import { useEffect } from "react";
+import gsap from "gsap";
 
 function AboutPhoto() {
     const navigate = useNavigate();
-    const {name, title} = useParams()
+    const {name, title} = useParams();
+
+    useEffect(() => {
+        const ctx = gsap.context (() => {
+            gsap.from('.smallButton',{opacity: 0, duration: 1.5, delay: 0.5, repeat: -1});
+            gsap.from('.photoFrame',{opacity: 0, duration: 1.5, delay: 1.0, x: 400});
+            gsap.from('.infoTwo',{opacity: 0, duration: 1.5, delay: 1.5, y: -400});
+
+        })
+        return() => ctx.revert()
+    }, [])
 
     return (
         <div>
