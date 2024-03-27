@@ -4,14 +4,21 @@ function ListDishes () {
     const [addedDishes, setAddedDishes] = useState("");
     const [listOfDishes, setListOfDishes] = useState([]);
 
-const addDishesToCook =(e) => {
-    console.log(e.target.value)
+const addDishesToCook = (e) => {
     setAddedDishes(e.target.value)
 }
 
-const addDish = (input) =>{
-    listOfDishes.push(input)
-    setListOfDishes({listOfDishes, addedDishes:''})
+const addDish = (e) =>{
+    e.preventDefault()
+    setListOfDishes([...listOfDishes, addedDishes])
+    setAddedDishes('')
+}
+
+
+
+const crossedDish = (e) => {
+    const li = e.target
+    li.classList.toggle('crossed')
 }
     return (
         <div>
@@ -24,14 +31,17 @@ const addDish = (input) =>{
             type="text"
             onChange={addDishesToCook}
             value = {addedDishes}
+            className="inputDish"
             />
-            <button onClick={() => addDish(listOfDishes)}>Add</button>
+                <button className="smallButtonTwo" onClick={addDish}>Add</button>
             <ul>
-                {listOfDishes.map((item) => (
-                    <li>{item}</li>
+                {listOfDishes.map((item, index) => (
+                    <li onClick={crossedDish} key={index} className="dishLi">{item}</li>
                 ))}
             </ul>
-
+            <div className="smallHeader">
+            <button className="smallButton" onClick={() => setListOfDishes([])}>Delete</button>
+            </div>
         </form>
         </div>
     )

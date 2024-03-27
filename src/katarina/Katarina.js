@@ -22,7 +22,7 @@ function Katarina() {
     }, [])
 
     const [destinationToSee, setDestinationToSee] = useState(0);
-    const {id, destination, imageToSee} = data[destinationToSee];
+    const {id, destination, imageToSee, description} = data[destinationToSee];
 
    
     const previousPlace = () => {
@@ -52,6 +52,7 @@ function Katarina() {
     }
 
     const [showMore, setShowMore] = useState(false)
+  
 
     return(
         <div>
@@ -89,7 +90,10 @@ function Katarina() {
                 <button className="iconBtn" onClick={previousPlace}><img src={left} alt = 'pic' width = "40px" /></button>     
                 <img className="photoFrame photoDest" src={imageToSee} width="450px" height="320px" alt="pic"/>
                 <button className="iconBtn" onClick={nextPlace}><img src = {right} alt = 'pic' width="40px" /></button>
-            </div>   
+             </div>    
+             <div className="smallHeader">
+                <p className="contPar">{description}</p>
+             </div> 
 
         <div className="smallHeader createPlan" >  
             <p className="par">Perhaps you want to go to Sicily? Create your own unique list of visiting Sicily attractions!</p>
@@ -120,7 +124,7 @@ function Katarina() {
                 </div>
                 </div>
         <div className="smallHeaderTwo">
-            <button className="btn cleanList"onClick={() => setPlacesToVisit([])}>Clean list</button>
+            <button className="btn cleanList" onClick={() => setPlacesToVisit([])}>Clean list</button>
         </div>
         <div className="smallHeader">
             <h3>Have a nice trip!</h3>

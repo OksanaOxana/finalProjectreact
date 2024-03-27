@@ -32,9 +32,10 @@ function Jonna() {
         setTransition(!transition)
     }
     const [photosJonna, setPhotosJonna] = useState(data['jonna']);
+    
     const chosenPhotos = (classPhotos) => {
         console.log(setPhotosJonna)
-        const newPhotos = data['jonna'].filter(item =>item.classPhotos===classPhotos)
+        const newPhotos = photosJonna.filter(item =>item.classPhotos===classPhotos)
         setPhotosJonna(newPhotos)
     }
 

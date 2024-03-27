@@ -8,6 +8,7 @@ h1 {
   -webkit-background-clip: text;
   font-size: 60px;
   text-wrap: balance;
+  font-family: 'Lora', serif;
 }
 
 h2, h3 {
@@ -19,6 +20,7 @@ h2, h3 {
 h4, h6 {
   color:#6F2232; 
   text-wrap: balance;
+  font-family: 'Lora', serif;
 }
 
 h6 {
@@ -32,6 +34,7 @@ h3 {
 h5 {
   color:#4E4E50;
   text-wrap: balance;
+  font-family: 'Lora', serif;
 }
 
 .info {
@@ -105,7 +108,6 @@ li {
   font-family: 'Source Sans 3', sans-serif;
   padding: 10px;
   background: antiquewhite;
-
 }
 
 .areaEmail {
@@ -381,6 +383,38 @@ nav {
   width:250px
 }
 
+.crossed {
+  text-decoration: line-through 2px #950740;
+}
+
+.inputDish {
+  background: transparent;
+  color:#6F2232;
+  border: #950740 3px solid;
+  padding: 10px;
+  width:50%
+}
+
+.dishLi {
+  font-family: 'Source Sans 3', sans-serif;
+  color: antiquewhite;
+  font-size: 16px;
+  background:#c3073F;
+  list-style: none;
+  margin-top: 20px;
+  padding: 12px;
+}
+
+.smallButtonTwo {
+  color:#c3073F;
+  background: transparent;
+  border: #950740 3px solid;
+  margin-top: 5px;
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 18px;
+  padding: 8px;
+}
+
 .containerphotosLesya {
   display: flex;
   justify-content: center;
@@ -412,6 +446,10 @@ nav {
 
   h1 {
     font-size: 30px;
+  }
+
+  h4 {
+    font-size: 16px;
   }
 
   .info {
@@ -490,7 +528,7 @@ nav {
     }
 
     h2 {
-      font-size: 18px;
+      font-size: 20px;
     }
 
     h5 {
