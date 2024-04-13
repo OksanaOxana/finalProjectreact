@@ -45,6 +45,7 @@ function Katarina() {
 
     }
     const [placesToVisit, setPlacesToVisit] = useState(data)
+    
     const removePlace = (id) => {
         let newPlacesToVisit = placesToVisit.filter((item => item.id!==id))
      

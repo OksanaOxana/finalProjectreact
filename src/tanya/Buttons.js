@@ -1,10 +1,10 @@
 
-
-function Buttons({filteredDishes}) {
+import { dataTwo } from "./dataTwo";
+function Buttons({filteredDishes, setDishes}) {
   
     return(
-        <div className="smallHeader">
-     
+        <div className="smallHeader"> 
+            <button className="mainBtn" onClick={() =>setDishes(dataTwo)}>All</button>
             <button className="mainBtn" onClick={() =>filteredDishes("cake")}>Cakes</button>
             <button className="mainBtn" onClick={() =>filteredDishes("pie")}>Pies</button>
             <button className="mainBtn" onClick={() =>filteredDishes("no-bake")}>No-bake desserts</button>

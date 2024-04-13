@@ -1,14 +1,11 @@
 import ControlledCarouselJonna from "./ControlledCarouselJonna";
 import image from "../photo/jonnaJinton.jpg";
 import video from "./videoV.mp4";
-
 import songJonna from "./jonna.ogg";
 import songJonnaTwo from "./jonnaTwo.ogg";
 import songJonnaThree from "./jonnaThree.ogg";
 import { useEffect, useRef, useState } from "react";
-
 import ButtonsJonna from "./ButtonsJonna";
-
 import gsap from "gsap";
 import { data } from "../data";
 import Photos from "../Photos";
@@ -34,7 +31,7 @@ function Jonna() {
     const [photosJonna, setPhotosJonna] = useState(data['jonna']);
     
     const chosenPhotos = (classPhotos) => {
-        console.log(setPhotosJonna)
+        console.log(photosJonna)
         const newPhotos = photosJonna.filter(item =>item.classPhotos===classPhotos)
         setPhotosJonna(newPhotos)
     }
@@ -68,11 +65,8 @@ function Jonna() {
                 <h2>Just loot at these amazing photos of Sweden!</h2>
             </div>
 
-
-
-        <ButtonsJonna filteredPhotos = {chosenPhotos} photos = {photosJonna} />
-        <Photos  name = {'jonna'}/>
-
+        <ButtonsJonna filteredPhotos = {chosenPhotos}  />
+        <Photos  images = {data['jonna']}/>
 
         <div className="header">
             <h2>Jewelry from the north</h2>

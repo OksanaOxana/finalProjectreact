@@ -1,4 +1,5 @@
-import { useState } from "react"
+import { useState } from "react";
+import Swal from 'sweetalert2';
 
 function ListDishes () {
     const [addedDishes, setAddedDishes] = useState("");
@@ -9,11 +10,21 @@ const addDishesToCook = (e) => {
 }
 
 const addDish = (e) =>{
+if (addedDishes === ""){
+    Swal.fire({
+        icon: "error",
+        title: "Oops...",
+        text: "You need to add dish!",
+        footer: "Try again!"
+      })}
+else{
     e.preventDefault()
     setListOfDishes([...listOfDishes, addedDishes])
-    setAddedDishes('')
+    setAddedDishes('')}
 }
-
+ const onFormSubmit =(e) => {
+    e.preventDefault()
+ }
 
 
 const crossedDish = (e) => {
@@ -25,7 +36,7 @@ const crossedDish = (e) => {
             <div className="smallHeader">
                 <h3>What are you planning to cook?</h3>
             </div>
-        <form>
+        <form onSubmit={onFormSubmit}>
             <input 
             placeholder="add dishes..."
             type="text"

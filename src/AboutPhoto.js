@@ -1,11 +1,10 @@
 import { useParams, useNavigate } from "react-router-dom";
-import { data } from "./data";
 import { useEffect } from "react";
 import gsap from "gsap";
 
-function AboutPhoto() {
+function AboutPhoto({images}) {
     const navigate = useNavigate();
-    const {name, title} = useParams();
+    const {title} = useParams();
 
     useEffect(() => {
         const ctx = gsap.context (() => {
@@ -19,7 +18,7 @@ function AboutPhoto() {
 
     return (
         <div>
-            {data[name].filter((item) => item.title === title).map((elem, index) => {
+            {images.filter((item) => item.title === title).map((elem, index) => {
                 return (
                     <div key={index}>
 

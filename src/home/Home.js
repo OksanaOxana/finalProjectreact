@@ -3,7 +3,6 @@ import { useEffect } from "react";
 import { dataPictures } from "./dataPictures";
 import HomePictures from "./HomePictures";
 import image from "../photo/woman.jpg";
-
 import gsap from "gsap";
 import ContactForm from "./Form";
 
@@ -13,6 +12,7 @@ function Home() {
     useEffect(() => {
         const ctx = gsap.context (() => {
             gsap.from('h1', {y: -400, duration: 1, delay: 1});
+            gsap.from('h3', {opacity: 0, y: -100, duration: 5, delay: 5, repeat: -1});
             gsap.from('.homePhoto', {opacity: 0, duration: 4, delay: 2});
             gsap.from('.picInterests', {opacity: 0, duration: 4, delay: 2});
             gsap.from('.btn', {opacity: 0, duration: 4, delay: 2, repeat: -1});

@@ -1,10 +1,23 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useForm, ValidationError } from '@formspree/react';
+import gsap from "gsap";
+
+
 function ContactForm() {
+  
+  useEffect(() => {
+    const ctx = gsap.context (() => {
+        gsap.from('.form', {x: 500, opacity: 0, duration: 5, delay: 5});
+        gsap.from('.smallButton', {y:100, opacity: 0, duration: 5, delay: 5, repeat: -1});
+    })
+    return() => ctx.revert()
+}, [])
+
   const [state, handleSubmit] = useForm("xwkgqzwq");
   if (state.succeeded) {
       return <p>Thanks for your message!</p>;
   }
+
   return (
       <form onSubmit={handleSubmit} className="form">
       <input

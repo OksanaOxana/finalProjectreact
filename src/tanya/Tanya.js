@@ -106,7 +106,7 @@ function Tanya() {
             <div className="smallHeader">
                 <h3> Just look at these amazing dishes!</h3>
             </div>
-            <Buttons filteredDishes = {chosenDishes}/>
+            <Buttons filteredDishes = {chosenDishes} setDishes={setDishes}/>
             <Dishes anyDishes = {dishes} />
             <div className="addPlan">
               <div className="smallHeader">
