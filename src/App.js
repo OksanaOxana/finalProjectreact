@@ -18,8 +18,6 @@ import gsap from "gsap";
 import AboutPhoto from "./AboutPhoto";
 
 
-
-
 function App() {
   useEffect(() => {
     const ctx = gsap.context (() => {
@@ -47,7 +45,7 @@ function App() {
       <Route path="/tanya" element = {<Tanya/>}/>
       <Route path="/alla" element = {<Alla/>}/>
       <Route path="/lesya" element = {<Lesya />}/>
-      <Route path="/:name/:title" element = {<AboutPhoto/>}/>
+      <Route path="/data/:/:title" element = {<AboutPhoto/>}/>
     </Routes>
 
     <footer className="py-3 my-4">

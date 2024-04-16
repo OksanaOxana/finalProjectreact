@@ -4,9 +4,6 @@ const MyTaskForLearn = ({taskPlans, addTask, deleteTask, selectedTasks, setSelec
             <div className="smallHeader">
                 <h3>My plan</h3>
             </div>
-            <div className="smallHeader">
-                <button className=" btn cleanList" onClick={addTask}>Add</button>
-            </div>
             
                 {taskPlans.map(({id, title, taskForLearning}) => (
                 <div className="createdPlan">  
@@ -19,7 +16,9 @@ const MyTaskForLearn = ({taskPlans, addTask, deleteTask, selectedTasks, setSelec
                     </div>
                 </div> 
                 ))}
-          
+                <div className="smallHeader">
+                    <button className=" btn cleanList" onClick={addTask}>Add</button>
+                </div>
         </div>
     )
 }

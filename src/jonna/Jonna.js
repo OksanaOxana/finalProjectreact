@@ -31,8 +31,7 @@ function Jonna() {
     const [photosJonna, setPhotosJonna] = useState(data['jonna']);
     
     const chosenPhotos = (classPhotos) => {
-        console.log(photosJonna)
-        const newPhotos = photosJonna.filter(item =>item.classPhotos===classPhotos)
+        const newPhotos = data['jonna'].filter(item =>item.classPhotos===classPhotos)
         setPhotosJonna(newPhotos)
     }
 
@@ -65,8 +64,8 @@ function Jonna() {
                 <h2>Just loot at these amazing photos of Sweden!</h2>
             </div>
 
-        <ButtonsJonna filteredPhotos = {chosenPhotos}  />
-        <Photos  images = {data['jonna']}/>
+        <ButtonsJonna filteredPhotos = {chosenPhotos} setPhotosJonna = {setPhotosJonna}  />
+        <Photos  images = {photosJonna} />
 
         <div className="header">
             <h2>Jewelry from the north</h2>

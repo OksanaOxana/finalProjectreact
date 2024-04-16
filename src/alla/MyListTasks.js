@@ -13,7 +13,7 @@ const MyListTasks = ({selectedTasks, updateTask}) => {
             <div className="smallHeader">
                 <input
                 type="text" 
-                placeholder="I need to learn "
+                placeholder="I need to learn..... "
                 onChange={(e) =>editMyTask("title", e.target.value)}
                 id = "title"
                 value = {selectedTasks.title}

@@ -82,7 +82,6 @@ function Tanya() {
     
       }
     
-    
       useEffect(() => {
         if (wordSubmitted !== '') {
           let ingr = wordSubmitted.split(/[,,;,\n,\r]/);
