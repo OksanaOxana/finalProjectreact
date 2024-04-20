@@ -45,7 +45,7 @@ function App() {
       <Route path="/tanya" element = {<Tanya/>}/>
       <Route path="/alla" element = {<Alla/>}/>
       <Route path="/lesya" element = {<Lesya />}/>
-      <Route path="/data/:/:title" element = {<AboutPhoto/>}/>
+      <Route path="/:images/:title" element = {<AboutPhoto/>}/>
     </Routes>
 
     <footer className="py-3 my-4">

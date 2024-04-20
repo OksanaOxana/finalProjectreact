@@ -66,6 +66,7 @@ function Jonna() {
 
         <ButtonsJonna filteredPhotos = {chosenPhotos} setPhotosJonna = {setPhotosJonna}  />
         <Photos  images = {photosJonna} />
+      
 
         <div className="header">
             <h2>Jewelry from the north</h2>
