@@ -3,7 +3,6 @@ import imageTen from "./photo/lesya10.jpg";
 import imageEleven from "./photo/lesya11.jpg";
 import imageTwelve from "./photo/lesya12.jpg";
 import imageFourteen from "./photo/lesya14.jpg";
-
 import jonnaTen from "./photo/jonna10.jpg";
 import jonnaThirteen from "./photo/jonna13.jpg";
 import jonnaFourteen from "./photo/jonna14.jpg";

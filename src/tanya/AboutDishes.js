@@ -1,5 +1,5 @@
 import { useParams, useNavigate } from "react-router-dom";
-import { dataTwo } from "./dataTwo";
+import { dataDishes } from "./dataDishes";
 import { useEffect } from "react";
 import gsap from "gsap";
 
@@ -19,7 +19,7 @@ function AboutDishes() {
 
     return (
         <div>
-            {dataTwo.filter((item) => item.title === title).map((elem, index) => {
+            {dataDishes.filter((item) => item.title === title).map((elem, index) => {
                 return (
                     <div key={index}>
                         <div className="smallHeader">

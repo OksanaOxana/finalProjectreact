@@ -62,7 +62,7 @@ function Lesya() {
             <div className="smallHeader">
                 <h3>She makes videos and photos for a flower shop</h3>
             </div>
-            <Photos images = {data['lesya']} />
+            <Photos property = {'lesya'} images = {data['lesya']} />
 
             <div className="smallHeader">
                 <h4>Filming content for personal and expert blogs, provides advice on blogging </h4>

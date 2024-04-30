@@ -19,7 +19,8 @@ import sweetEighteen from "../photo/tanja18.jpg";
 import sweetNineteen from "../photo/tanja19.jpg";
 import sweetTwenty from "../photo/tanja20.jpg";
 import sweetTwentyOne from "../photo/tanja21.jpg"
-export const dataTwo = [
+
+export const dataDishes = [
     {
         id: 1,
         dishToCook: sweetOne, 

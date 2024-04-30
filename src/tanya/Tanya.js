@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import image from "../photo/tanjaKulinarim.jpg"
-import { dataTwo } from "./dataTwo";
+import { dataDishes } from "./dataDishes";
 import Dishes from "./Dishes";
 import Buttons from "./Buttons";
 import photo from "../photo/tanja22.jpg";
@@ -25,9 +25,9 @@ function Tanya() {
     return() => ctx.revert()
 }, [])
 
-    const [dishes, setDishes] = useState(dataTwo);
+    const [dishes, setDishes] = useState(dataDishes);
     const chosenDishes = (classDishes) => {
-        const newDishes = dataTwo.filter(item =>item.classDishes===classDishes)
+        const newDishes = dataDishes.filter(item =>item.classDishes===classDishes)
         setDishes(newDishes)
     }
 

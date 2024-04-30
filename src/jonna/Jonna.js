@@ -65,7 +65,7 @@ function Jonna() {
             </div>
 
         <ButtonsJonna filteredPhotos = {chosenPhotos} setPhotosJonna = {setPhotosJonna}  />
-        <Photos  images = {photosJonna} />
+        <Photos  property = {'jonna'} images = {photosJonna} />
       
 
         <div className="header">
