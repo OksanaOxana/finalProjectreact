@@ -1,12 +1,12 @@
 import { Link } from "react-router-dom";
-import { data } from "./data";
+
 
 
 function Photos({images, property}) {
 
     return(
         <div className="main-item">
-            {data[images].map(item => {
+            {images.map(item => {
                 const {id, image, title} = item;
                 
                 return(
