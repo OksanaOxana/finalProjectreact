@@ -4,7 +4,6 @@ import ControlledCarousel from "./ControlledCarousel";
 import MyTaskForLearn from "./MyTaskForLearn";
 import MyListTasks from "./MyListTasks";
 import uuid from "react-uuid";
-
 import gsap from "gsap"
 
 

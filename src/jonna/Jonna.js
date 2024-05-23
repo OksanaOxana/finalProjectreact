@@ -1,14 +1,11 @@
 import ControlledCarouselJonna from "./ControlledCarouselJonna";
 import image from "../photo/jonnaJinton.jpg";
-import video from "./videoV.mp4";
-import songJonna from "./jonna.ogg";
-import songJonnaTwo from "./jonnaTwo.ogg";
-import songJonnaThree from "./jonnaThree.ogg";
 import { useEffect, useRef, useState } from "react";
 import ButtonsJonna from "./ButtonsJonna";
 import gsap from "gsap";
 import { data } from "../data";
 import Photos from "../Photos";
+import VideoAndAudio from "./VideoAndAudio";
 
 function Jonna() {
     useEffect(() => {
@@ -22,7 +19,6 @@ function Jonna() {
         return() => ctx.revert()
     }, [])
 
-    const [musicJonnaPlay, setMusicJonnaPlay] = useState(true);
 
     const [transition, setTransition] = useState(false);
     const getTransition = () => {
@@ -33,14 +29,6 @@ function Jonna() {
     const chosenPhotos = (classPhotos) => {
         const newPhotos = data['jonna'].filter(item =>item.classPhotos===classPhotos)
         setPhotosJonna(newPhotos)
-    }
-
-    const refAudio = useRef()
-
-    const handlePlay = (song) => {
-        setMusicJonnaPlay(!musicJonnaPlay)
-        refAudio.current.src = song;
-        musicJonnaPlay?refAudio.current.play():refAudio.current.pause()
     }
 
     const [showMore, setShowMore] = useState(false)
@@ -83,35 +71,7 @@ function Jonna() {
                 <h3>Take a look at this beauty inspired by Swedish nature!</h3>
             </div>
 
-            <div className="header">  
-                <h2>Watch and enjoy</h2>
-            </div> 
-            <div className="smallHeader">
-                <p className="par">What an amazing natural phenomenon - the Northern Lights! 
-                    It’s simply amazing how much fabulous beauty there is in the world!</p>
-            </div> 
-            <div className="smallHeader">
-                <video className="videoJonna" autoPlay muted loop width="750px">
-                    <source  src={video}></source>
-                </video>
-            </div>
-            <div className="paragraph">
-                <div className="parSmall">
-                    <audio 
-                    loop = "loop"
-                    ref = {refAudio}>
-                    </audio>
-                    {
-                    [songJonna, songJonnaTwo, songJonnaThree].map((song, index)=> (
-                        <button
-                        key={index}
-                        className="musicBtn"
-                        onClick={()=> handlePlay(song)}
-                        >{musicJonnaPlay ? "Play Song" : "Pause"}</button>
-                    ))
-                }
-               </div>
-            </div>
+            <VideoAndAudio />
             <div className="smallHeader spaceCont">
                 <h3>Jonna has even more interesting things on her channel!</h3>
             </div>

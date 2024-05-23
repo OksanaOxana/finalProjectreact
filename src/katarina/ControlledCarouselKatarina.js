@@ -1,6 +1,5 @@
 import { useState } from "react";
 import Carousel from 'react-bootstrap/Carousel';
-
 import katarinaOne from "../photo/kat1.jpg";
 import katarinaTwo from "../photo/kat2.jpg";
 import katarinaThree from "../photo/kat3.jpg";

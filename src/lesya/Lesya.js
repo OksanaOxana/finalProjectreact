@@ -32,7 +32,7 @@ function Lesya() {
     return(
         <div>
             <div className="smallHeader">
-                <h1>Context photographer Lesya</h1>
+                <h1>Content photographer Lesya</h1>
             </div>
             <div className="smallHeader">
                 <img className="mainPhoto" src={image} alt="pic"width="250px"  height="200px"/>
