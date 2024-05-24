@@ -6,6 +6,8 @@ import ControlledCarouselLesya from "./ControlledCarouselLesya";
 import ControlledCarouselLesyaSecond from "./ControlledCarouselLesyaSecond";
 import Photos from "../Photos";
 import { data } from "../data";
+import ControlledCarousel from "../ControlledCarousel";
+import { dataCarousel } from "../dataCarousel";
 
 function Lesya() {
     useEffect(() => {
@@ -21,7 +23,9 @@ function Lesya() {
     }, [])
 
     const [advice, setAdvice] = useState("");
-   
+  
+
+
         const getAdvice = async() => {
         const response = await fetch(`https://api.adviceslip.com/advice`);
         const data = await response.json();
@@ -47,7 +51,9 @@ function Lesya() {
                 <h4>Today Lesya is a marketer for a chain of confectionery-bakeries. One of them is BRIOCHE</h4>
             </div>
             <div className="smallHeader">
-                <ControlledCarouselLesya />
+            <ControlledCarouselLesya />
+                <ControlledCarousel slides = {dataCarousel['lesya']}/>
+
             </div>
             <div className="smallHeader spaceCont">
                 <p className="info">Among other things, Lesya is a very cheerful and bright person. 
@@ -69,6 +75,8 @@ function Lesya() {
             </div>
             <div className="smallHeader">
             <ControlledCarouselLesyaSecond />
+            <ControlledCarousel slides = {dataCarousel['lesyaTwo']}/>
+
             </div>
 
             <div className="advices">

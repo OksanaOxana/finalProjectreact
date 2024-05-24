@@ -9,6 +9,7 @@ import jonnaSix from "../photo/jonna6.jpg";
 import jonnaSeven from "../photo/jonna7.jpg";
 import jonnaEight from "../photo/jonna8.jpg";
 import jonnaNine from "../photo/jonna9.jpg";
+
 function ControlledCarouselJonna() {
     const [index, setIndex] = useState(0);
   
