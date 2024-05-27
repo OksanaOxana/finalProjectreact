@@ -2,9 +2,10 @@ import image from "../photo/katarineOne.jpg";
 import { useEffect, useState } from "react";
 import React from "react";
 import gsap from "gsap"
-import ControlledCarouselKatarina from "./ControlledCarouselKatarina";
 import ListOfAttractions from "./ListOfAttractions";
 import PlacesInSicily from "./PlacesInSicily";
+import ControlledCarousel from "../ControlledCarousel";
+import { dataCarousel } from "../dataCarousel";
 
 
 
@@ -42,7 +43,12 @@ function Katarina() {
                 <h3>Here's some information from Katya's Instagram page</h3>
             </div>
             <div className="smallHeader">
-                <ControlledCarouselKatarina />
+
+                <ControlledCarousel
+                slides = {dataCarousel['katarina']}
+                classPar = {'infoKatarina'}
+                height = {'450px'}
+                weight = {'500px'}/> 
             </div>
        
     <PlacesInSicily />

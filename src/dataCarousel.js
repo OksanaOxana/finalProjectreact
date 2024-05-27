@@ -57,109 +57,68 @@ export const dataCarousel = {
             id: 1,
             image: allaOne, 
             description: "Here you can learn about IT!",
-            classPhoto: "",
-            classPar: "infoAllaTwo",
-            height: "650px",
-            weight: "800px"
         },
         {
             id: 2,
             image: allaTwo, 
             description: "Alla shares information about controlling gadgets with the power of thought",
-            classPhoto: "",
-            classPar: "infoAllaTwo",
-            height: "650px",
-            weight: "800px"
         },
         {
             id: 3,
             image: allaThree, 
             description: "For example, she pays great attention to a healthy lifestyle and proper nutrition!",
-            classPhoto: "",
-            classPar: "infoAllaTwo",
-            height: "650px",
-            weight: "800px"
         },
         {
             id: 4,
             image: allaFour, 
             description: "Alla knows how to present any information in such a way that it becomes very interesting",
-            classPhoto: "",
-            classPar: "infoAllaTwo",
-            height: "650px",
-            weight: "800px"
         },
         {
             id: 5,
             image: allaFive, 
             description: "Alla also gives useful information in various areas of life",
-            classPhoto: "",
-            classPar: "infoAllaTwo",
-            height: "650px",
-            weight: "800px"
         },
         {
             id: 6,
             image: allaSix, 
             description: "Model Shudu shoots for famous brands. But this is not a living person, but a digital supermodel!!!",
-            classPhoto: "",
-            classPar: "infoAllaTwo",
-            height: "650px",
-            weight: "800px"
+   
         },
         {
             id: 7,
             image: allaSeven, 
             description: "She teaches not only how to write code correctly, but also supports and helps in every possible way!!!",
-            classPhoto: "",
-            classPar: "infoAllaTwo",
-            height: "650px",
-            weight: "800px"
+
         },
         {
             id: 8,
             image: allaEight, 
             description: "DermaSensor is a portable device for detecting skin cancer based on artificial intelligence.",
-            classPhoto: "",
-            classPar: "infoAllaTwo",
-            height: "650px",
-            weight: "800px"
+
         },
         {
             id: 9,
             image: allaNine, 
             description: "The screen of the new Motorola smartphone can bend like a watch.",
-            classPhoto: "",
-            classPar: "infoAllaTwo",
-            height: "650px",
-            weight: "800px"
+
         },
         {
             id: 10,
             image: allaTen, 
             description: "The new director of a private school in the UK is a chatbot.",
-            classPhoto: "",
-            classPar: "infoAllaTwo",
-            height: "650px",
-            weight: "800px"
+
         },
         {
             id: 11,
             image: allaEleven, 
             description: "Late rapper Turak was presented using technology and special effects.",
-            classPhoto: "",
-            classPar: "infoAllaTwo",
-            height: "650px",
-            weight: "800px"
+
         },
         {
             id: 12,
             image: allaTwelve, 
             description: "Alla is always happy for her students and shares their successes!",
-            classPhoto: "",
-            classPar: "infoAllaTwo",
-            height: "650px",
-            weight: "800px"
+ 
         },
     ],
 
@@ -169,82 +128,46 @@ export const dataCarousel = {
             id: 1,
             image: jonnaOne, 
             description: "BERG - ARMCUFF",
-            classPhoto: "",
-            classPar: "infoJonna",
-            height: "300px",
-            weight: "350px"
         },
         {
             id: 2,
             image: jonnaTwo, 
             description: "BISON - BRACELET",
-            classPhoto: "",
-            classPar: "infoJonna",
-            height: "300px",
-            weight: "350px"
         },
         {
             id: 3,
             image: jonnaThree, 
             description: "WILD - NECKLACE",
-            classPhoto: "",
-            classPar: "infoJonnaTwo",
-            height: "300px",
-            weight: "350px"
         },
         {
             id: 4,
             image: jonnaFour, 
             description: "ANCIENT - RING",
-            classPhoto: "",
-            classPar: "infoJonna",
-            height: "300px",
-            weight: "350px"
         },
         {
             id: 5,
             image: jonnaFive, 
             description: "BJORK - EARRINGS",
-            classPhoto: "",
-            classPar: "infoJonna",
-            height: "300px",
-            weight: "350px"
         },
         {
             id: 6,
             image: jonnaSix, 
             description: "AURORA BOREALIS - NECKLACE",
-            classPhoto: "",
-            classPar: "infoJonna",
-            height: "300px",
-            weight: "350px"
         },
         {
             id: 7,
             image: jonnaSeven, 
             description: "BODY, MIND, SOUL - NECKLACE",
-            classPhoto: "",
-            classPar: "infoJonnaTwo",
-            height: "300px",
-            weight: "350px"
         },
         {
             id: 8,
             image: jonnaEight, 
             description: "BERG - ARMCUFF",
-            classPhoto: "",
-            classPar: "infoJonna",
-            height: "300px",
-            weight: "350px"
         },
         {
             id: 9,
             image: jonnaNine, 
             description: "BISON - BRACELET",
-            classPhoto: "",
-            classPar: "infoJonna",
-            height: "300px",
-            weight: "350px"
         },
     ],
 
@@ -253,118 +176,69 @@ export const dataCarousel = {
             id: 1,
             image: katarinaOne, 
             description: "An interesting story about the famous flower pots - 'Moors' heads'",
-            classPhoto: "",
-            classPar: "infoKatarina",
-            height: "450px",
-            weight: "500px"
         },
         {
             id: 2,
             image: katarinaTwo, 
             description: "On her channel you will learn the difference between “Ti amo” and “Ti voglio bene",
-            classPhoto: "",
-            classPar: "infoKatarina",
-            height: "450px",
-            weight: "500px"
         },
         {
             id: 3,
             image: katarinaThree, 
             description: "Katya shows on her page various sights of Sicily and more!",
-            classPhoto: "",
-            classPar: "infoKatarina",
-            height: "450px",
-            weight: "500px"
         },
         {
             id: 4,
             image: katarinaFour, 
             description: "You will see the city where Katya and Giovanni had their first date. And in general, you will learn the story of their acquaintance!",
-            classPhoto: "",
-            classPar: "infoKatarina",
-            height: "450px",
-            weight: "500px"
         },
         {
             id: 5,
             image: katarinaFive, 
             description: "So many colorful views!",
-            classPhoto: "",
-            classPar: "infoKatarina",
-            height: "450px",
-            weight: "500px"
         },
         {
             id: 6,
             image: katarinaSix, 
             description: "You can see how Katya and Giovanni and two cats celebrate Christmas!",
-            classPhoto: "",
-            classPar: "infoKatarina",
-            height: "450px",
-            weight: "500px"
+
         },
         {
             id: 7,
             image: katarinaSeven, 
             description: "View from the famous Turrisi Bar. If you want to know what it is famous for, just look at her page!",
-            classPhoto: "",
-            classPar: "infoKatarina",
-            height: "450px",
-            weight: "500px"
         },
         {
             id: 8,
             image: katarinaEight, 
             description: `Italian Halloween vocabulary 'la zucca' - pumpkin, 'la strega' - witch, 'il fantasma' - ghost, 'Dolcetto o scherzetto?!'`,
-            classPhoto: "",
-            classPar: "infoKatarina",
-            height: "450px",
-            weight: "500px"
+
         },
         {
             id: 9,
             image: katarinaNine, 
             description: "On Katya's page you can find out what her husband Giovanni and the famous actor Al Pacino have in common!",
-            classPhoto: "",
-            classPar: "infoKatarina",
-            height: "450px",
-            weight: "500px"
         },
         {
             id: 10,
             image: katarinaTen, 
             description: "The famous fountain 'Di Trevi' is called so because it is located at the intersection of three streets.",
-            classPhoto: "",
-            classPar: "infoKatarina",
-            height: "450px",
-            weight: "500px"
         },
         {
             id: 11,
             image: katarinaEleven, 
             description: "Three types of coffee that Italians use to escape the heat: 'Affogato' - vanilla ice cream topped with a shot of hot espresso, 'Caffe freddo con panna' - cold espresso with a scoop of coffee granita, 'Crema al caffe' - thick cool coffee cream.",
-            classPhoto: "",
-            classPar: "infoKatarina",
-            height: "450px",
-            weight: "500px"
+
         },
         {
             id: 12,
             image: katarinaTwelve, 
             description: "If you are the owner of several houses and have allowed tenants into the house, then you are not immune from the fact that your tenants may become occupiers! And the law will be on the side of these occupiers! For this reason, some Italians prefer to sell their homes rather than rent them out.",
-            classPhoto: "",
-            classPar: "infoKatarina",
-            height: "450px",
-            weight: "500px"
         },
         {
             id: 13,
             image: katarinaFourteen, 
             description: "Giovanni is learning Russian, he shares his impressions of Russian culture",
-            classPhoto: "",
-            classPar: "infoKatarina",
-            height: "450px",
-            weight: "500px"
         },
 ],
 
@@ -374,73 +248,41 @@ export const dataCarousel = {
             id: 1,
             image: lesyaTwo, 
             description: "Advice from Lesya: 'Be yourself and don’t be afraid to express yourself on the blog!",
-            classPhoto: "",
-            classPar: "infoKatarina",
-            height: "500px",
-            weight: "350px"
         },
         {
             id: 2,
             image: lesyaThree, 
             description: "Lesya will show you the main mistakes: 'non-trigger photos, lack of highlights, photos in the feed are not diverse'",
-            classPhoto: "",
-            classPar: "infoKatarina",
-            height: "500px",
-            weight: "350px"
         },
         {
             id: 3,
             image: lesyaFour, 
             description: "This is what Lesya says about her work: It’s so great to do something that brings pleasure and share this knowledge with others, and see how people’s eyes light up!",
-            classPhoto: "",
-            classPar: "infoKatarina",
-            height: "500px",
-            weight: "350px"
         },
         {
             id: 4,
             image: lesyaSix, 
             description: "Another advice from Lesya: be sincere and real, don’t be afraid to share not only your successes, but also your failures",
-            classPhoto: "",
-            classPar: "infoKatarina",
-            height: "500px",
-            weight: "350px"
         },
         {
             id: 5,
             image: lesyaEight, 
             description: "For her filming, Lesya writes down a whole list of photo ideas",
-            classPhoto: "",
-            classPar: "infoKatarina",
-            height: "500px",
-            weight: "350px"
         },
         {
             id: 6,
             image: lesyaThirteen, 
             description: "Lesya provides consultations and gives advice on improving the blog",
-            classPhoto: "",
-            classPar: "infoKatarina",
-            height: "500px",
-            weight: "350px"
         },
         {
             id: 7,
             image: lesyaTwenty, 
             description: "Every shoot by Lesya is special, she devotes herself 100% to the process, knows how to feel people and reveal them",
-            classPhoto: "",
-            classPar: "infoKatarina",
-            height: "500px",
-            weight: "350px"
         },
         {
             id: 8,
             image: lesyaEighteen, 
             description: "She is always for unusual ideas and not being like everyone else!",
-            classPhoto: "",
-            classPar: "infoKatarina",
-            height: "500px",
-            weight: "350px"
         },
     ], 
     
@@ -450,46 +292,26 @@ export const dataCarousel = {
             id: 1,
             image: lesyaFifteen, 
             description: "Eclair is like a work of art! It's even a pity to eat...",
-            classPhoto: "",
-            classPar: "infoKatarina",
-            height: "500px",
-            weight: "350px"
         },
         {
             id: 2,
             image: lesyaSeventeen, 
             description: "A corner of France in the center of Minsk",
-            classPhoto: "",
-            classPar: "infoKatarina",
-            height: "500px",
-            weight: "350px"
         },
         {
             id: 3,
             image: lesyaFive, 
             description: "Lesya is a marketer and content photographer for the entire Brioche network",
-            classPhoto: "",
-            classPar: "infoKatarina",
-            height: "500px",
-            weight: "350px"
         },
         {
             id: 4,
             image: lesyaSixteen, 
             description: "Now there are even more coffee and desserts in Lesya's stories!",
-            classPhoto: "",
-            classPar: "infoKatarina",
-            height: "500px",
-            weight: "350px"
         },
         {
             id: 5,
             image: lesyaSeven, 
             description: "How beautiful it is...",
-            classPhoto: "",
-            classPar: "infoKatarina",
-            height: "500px",
-            weight: "350px"
         },
     ]
 

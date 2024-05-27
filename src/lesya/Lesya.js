@@ -2,8 +2,6 @@ import image from "../photo/lisenok.jpg";
 import { useEffect, useState } from "react";
 import photo from "../photo/lesya1.jpg";
 import gsap from "gsap"
-import ControlledCarouselLesya from "./ControlledCarouselLesya";
-import ControlledCarouselLesyaSecond from "./ControlledCarouselLesyaSecond";
 import Photos from "../Photos";
 import { data } from "../data";
 import ControlledCarousel from "../ControlledCarousel";
@@ -51,8 +49,12 @@ function Lesya() {
                 <h4>Today Lesya is a marketer for a chain of confectionery-bakeries. One of them is BRIOCHE</h4>
             </div>
             <div className="smallHeader">
-            <ControlledCarouselLesya />
-                <ControlledCarousel slides = {dataCarousel['lesya']}/>
+            <ControlledCarousel 
+                
+                slides = {dataCarousel['lesya']}
+                classPar = {'infoKatarina'}
+                height = {'500px'}
+                weight = {'350px'}/>
 
             </div>
             <div className="smallHeader spaceCont">
@@ -74,8 +76,11 @@ function Lesya() {
                 <h4>Filming content for personal and expert blogs, provides advice on blogging </h4>
             </div>
             <div className="smallHeader">
-            <ControlledCarouselLesyaSecond />
-            <ControlledCarousel slides = {dataCarousel['lesyaTwo']}/>
+            <ControlledCarousel 
+            slides = {dataCarousel['lesyaTwo']}
+            classPar = {'infoKatarina'}
+            height = {'500px'}
+            weight = {'350px'}/>
 
             </div>
 

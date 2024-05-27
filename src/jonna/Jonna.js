@@ -1,11 +1,12 @@
-import ControlledCarouselJonna from "./ControlledCarouselJonna";
 import image from "../photo/jonnaJinton.jpg";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import ButtonsJonna from "./ButtonsJonna";
 import gsap from "gsap";
 import { data } from "../data";
 import Photos from "../Photos";
 import VideoAndAudio from "./VideoAndAudio";
+import ControlledCarousel from "../ControlledCarousel";
+import { dataCarousel } from "../dataCarousel";
 
 function Jonna() {
     useEffect(() => {
@@ -65,7 +66,11 @@ function Jonna() {
             </div>
 
             <div className="smallHeader">
-                <ControlledCarouselJonna />
+                <ControlledCarousel     
+                    slides = {dataCarousel['jonna']}
+                    classPar = {'infoJonna'}
+                    height = {'300px'}
+                    weight = {'350px'}/>
             </div> 
               <div className="smallHeader spaceCont">
                 <h3>Take a look at this beauty inspired by Swedish nature!</h3>

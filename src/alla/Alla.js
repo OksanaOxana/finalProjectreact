@@ -1,10 +1,11 @@
 import { useEffect, useState } from "react";
 import image from "../photo/CanSheCode.jpg";
-import ControlledCarousel from "./ControlledCarousel";
 import MyTaskForLearn from "./MyTaskForLearn";
 import MyListTasks from "./MyListTasks";
 import uuid from "react-uuid";
-import gsap from "gsap"
+import gsap from "gsap";
+import ControlledCarousel from "../ControlledCarousel";
+import { dataCarousel } from "../dataCarousel";
 
 
 function Alla() {
@@ -71,7 +72,11 @@ useEffect(() => {
                 <h2>Here is some information from Alla's page</h2>
             </div> 
             <div className="smallHeader"> 
-                <ControlledCarousel />
+                <ControlledCarousel 
+                    slides = {dataCarousel['alla']}
+                    classPar = {'infoAllaTwo'}
+                    height = {'650px'}
+                    weight = {'800px'}/>
             </div> 
             <div className="smallHeader">
                 <h3>What courses does Alla offer?</h3>

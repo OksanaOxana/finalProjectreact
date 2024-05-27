@@ -1,9 +1,10 @@
 import { useState } from 'react';
+import React from "react";
 import Carousel from 'react-bootstrap/Carousel';
 import { dataCarousel } from './dataCarousel';
 
 
-function ControlledCarousel({slides}) {
+function ControlledCarousel({slides, height, width, classPar}) {
   const [index, setIndex] = useState(dataCarousel);
 
   const handleSelect = (selectedIndex) => {
@@ -12,11 +13,10 @@ function ControlledCarousel({slides}) {
 
 
   return (
-    <div>
-
-                {slides.map(slide => {
-                const {id, image, description, height, width, classPar} = slide;
-                return(
+  <div>
+    {slides?.map(slide => {
+      const {id, image, description} = slide;
+      return(
     <Carousel key={id} activeIndex={index} onSelect={handleSelect}>
       <Carousel.Item>
         <img className='carouselAlla photoFrame' src={image} height={height} width={width} text="1 slide" alt="pic"/>
