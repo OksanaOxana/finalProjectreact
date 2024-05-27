@@ -70,7 +70,7 @@ function Jonna() {
                     slides = {dataCarousel['jonna']}
                     classPar = {'infoJonna'}
                     height = {'300px'}
-                    weight = {'350px'}/>
+                    width = {'350px'}/>
             </div> 
               <div className="smallHeader spaceCont">
                 <h3>Take a look at this beauty inspired by Swedish nature!</h3>

@@ -48,7 +48,7 @@ function Katarina() {
                 slides = {dataCarousel['katarina']}
                 classPar = {'infoKatarina'}
                 height = {'450px'}
-                weight = {'500px'}/> 
+                width = {'500px'}/> 
             </div>
        
     <PlacesInSicily />

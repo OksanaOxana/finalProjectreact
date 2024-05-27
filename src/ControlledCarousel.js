@@ -1,33 +1,34 @@
 import { useState } from 'react';
 import React from "react";
 import Carousel from 'react-bootstrap/Carousel';
-import { dataCarousel } from './dataCarousel';
 
 
 function ControlledCarousel({slides, height, width, classPar}) {
-  const [index, setIndex] = useState(dataCarousel);
+  const [index, setIndex] = useState(0);
 
   const handleSelect = (selectedIndex) => {
     setIndex(selectedIndex);
+    console.log('slides:', slides)
   };
-
 
   return (
   <div>
-    {slides?.map(slide => {
-      const {id, image, description} = slide;
+
+    <Carousel  activeIndex={index} onSelect={handleSelect}>
+    {slides?.map((slide, id) => {
+      const {image, description} = slide;
       return(
-    <Carousel key={id} activeIndex={index} onSelect={handleSelect}>
-      <Carousel.Item>
+      <Carousel.Item key={id}>
         <img className='carouselAlla photoFrame' src={image} height={height} width={width} text="1 slide" alt="pic"/>
         <Carousel.Caption>
         <p className={classPar}>{description}</p>
         </Carousel.Caption>
         </Carousel.Item>
+        )})}
      </Carousel>
-)})}
+    
+
     </div>
   );
 }
-
 export default ControlledCarousel;

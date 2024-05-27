@@ -54,7 +54,7 @@ function Lesya() {
                 slides = {dataCarousel['lesya']}
                 classPar = {'infoKatarina'}
                 height = {'500px'}
-                weight = {'350px'}/>
+                width = {'350px'}/>
 
             </div>
             <div className="smallHeader spaceCont">
@@ -77,10 +77,10 @@ function Lesya() {
             </div>
             <div className="smallHeader">
             <ControlledCarousel 
-            slides = {dataCarousel['lesyaTwo']}
+            slides = {dataCarousel['lesyaSecond']}
             classPar = {'infoKatarina'}
             height = {'500px'}
-            weight = {'350px'}/>
+            width = {'350px'}/>
 
             </div>
 

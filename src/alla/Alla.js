@@ -76,7 +76,7 @@ useEffect(() => {
                     slides = {dataCarousel['alla']}
                     classPar = {'infoAllaTwo'}
                     height = {'650px'}
-                    weight = {'800px'}/>
+                    width = {'800px'}/>
             </div> 
             <div className="smallHeader">
                 <h3>What courses does Alla offer?</h3>
