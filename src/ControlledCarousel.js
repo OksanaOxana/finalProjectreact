@@ -8,7 +8,6 @@ function ControlledCarousel({slides, height, width, classPar}) {
 
   const handleSelect = (selectedIndex) => {
     setIndex(selectedIndex);
-    console.log('slides:', slides)
   };
 
   return (
