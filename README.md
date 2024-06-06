@@ -22,11 +22,12 @@
 ### About The Project
 
 This is my final project after completing the React course. In this project, I decided to talk about my favorite bloggers, since this is very relevant now - people are increasingly going online. I talked about five bloggers. These are completely different blogs - a blog of an IT specialist, a content photographer, a culinary blog, a blog about Italy and Sweden.These are very different people, but they have one thing in common - each of them is trying to do the World has become a better place in its own way!
+I used HTML5/CSS3, GSAP, Bootstrap, various JS methods - map(), filter() and React hooks: 
 
-In this project I used API and Hooks:
 * useState()
 * useEffect()
 * useRef()
+Integrated API for searching calories in user-entered foods
 
 
 Use the `BLANK_README.md` to get started.
