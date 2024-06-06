@@ -27,6 +27,7 @@ I used HTML5/CSS3, GSAP, Bootstrap, various JS methods - map(), filter() and Rea
 * useState()
 * useEffect()
 * useRef()
+  
 Integrated API for searching calories in user-entered foods
 
 
