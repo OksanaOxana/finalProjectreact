@@ -25,7 +25,7 @@ function AboutPhoto() {
                     <div key={index}>
 
                         <div className="smallHeader" >
-                            <img className="photoFrame photoAdapted" src={elem.image} alt="pic" width="500px"/>
+                            <img className="photoFrame photoAdapted" src={elem.image} alt="pic" width="300px"/>
                         </div>
                         <div className="smallHeader">
                             <p className="infoTwo  spaceCont">{elem.description}</p>

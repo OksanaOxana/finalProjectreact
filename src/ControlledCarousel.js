@@ -12,7 +12,6 @@ function ControlledCarousel({slides, height, width, classPar}) {
 
   return (
   <div>
-
     <Carousel  activeIndex={index} onSelect={handleSelect}>
     {slides?.map((slide, id) => {
       const {image, description} = slide;

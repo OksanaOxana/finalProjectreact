@@ -82,7 +82,7 @@ useEffect(() => {
                 <h3>What courses does Alla offer?</h3>
             </div>
             <div className="smallHeader spaceCont">
-                <p className="info">With Alla, you can start learning from the very basics - 
+                <p className="text-container">With Alla, you can start learning from the very basics - 
             HTML/CSS, then, if you like it, continue and learn JavaScript, 
             React, Node. Next, Alla plans to launch a course on mobile development and Python. 
             And all the information is in an accessible form, 

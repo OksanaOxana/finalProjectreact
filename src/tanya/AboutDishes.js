@@ -21,12 +21,12 @@ function AboutDishes() {
         <div>
             {dataDishes.filter((item) => item.title === title).map((elem, index) => {
                 return (
-                    <div key={index}>
+                    <div className="fruit-candy-container" key={index}>
                         <div className="smallHeader">
                             <h3>{elem.nameDishes}</h3>
                         </div> 
                         <div className="smallHeader">
-                            <img className="aboutDish" src={elem.dishToCook} alt="pic" width="500px"/>
+                            <img className="aboutDish" src={elem.dishToCook} alt="pic" width="400px"/>
                         </div>
                         <div className="smallHeader">
                             <p className="descriptionItems spaceCont">{elem.description}</p>

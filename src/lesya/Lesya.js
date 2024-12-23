@@ -58,7 +58,7 @@ function Lesya() {
 
             </div>
             <div className="smallHeader spaceCont">
-                <p className="info">Among other things, Lesya is a very cheerful and bright person. 
+                <p className="text-container">Among other things, Lesya is a very cheerful and bright person. 
                 Her Instagram page radiates positivity! All her stories are interesting, 
                 the photographs are very beautiful, bright and colorful. 
                 And Olesya always conveys on her page confidence in the future, if a person does not give up, 

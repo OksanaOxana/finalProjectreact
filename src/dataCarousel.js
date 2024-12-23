@@ -111,7 +111,7 @@ export const dataCarousel = {
         {
             id: 11,
             image: allaEleven, 
-            description: "Late rapper Turak was presented using technology and special effects.",
+            description: "Late rapper Tupak was presented using technology and special effects.",
 
         },
         {

@@ -41,9 +41,9 @@ h5 {
   font-family: 'Source Sans 3', sans-serif;
   color: white;
   background:#4E4E50;
-  padding: 5px;
   font-size: 22px;
-  width: 1000px;
+  padding: 20px;
+  margin: 20px;
   text-align: justify;
 } 
 
@@ -154,6 +154,19 @@ nav {
   text-align: center;
 }
 
+.text-container {
+  margin: 20px auto;
+  padding: 15px;
+  max-width: 800px;
+  text-align: center;
+  font-family: 'Source Sans 3', sans-serif;
+  color: white;
+  background:#4E4E50;
+  border-radius: 10px; /* Сглаженные углы */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Легкая тень */
+}
+
+
 .header {
   text-align: center;
   margin-top: 70px;
@@ -178,7 +191,10 @@ nav {
   font-family: 'Source Sans 3', sans-serif;
   font-size: 20px;
   background: #1A1A1D;
-  color: antiquewhite
+  color: antiquewhite;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); 
+  padding: 10px 20px; 
 }
 
 .destiny {
@@ -193,17 +209,33 @@ nav {
   color:#1A1A1D;
   background: #c3073F;
   margin-top: 5px;
+  padding: 10px 20px;
   font-family: 'Source Sans 3', sans-serif;
   font-size: 18px;
   border: none;
-  padding: 5px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.smallButton:hover {
+  background-color: #1A1A1D;
+  color: #c3073F;
+  border: 3px solid #c3073F;
+  padding: 8px 18px;
 }
 
 .createPlan {
   background: #4E4E50;
   color: antiquewhite;
   margin: 50px;
+  margin: 20px auto;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  max-width: 800px;
+  text-align: center;
 }
+
 
 .cleanList {
   background: antiquewhite;
@@ -212,10 +244,11 @@ nav {
 }
 
 .contPar {
-  line-height: 2.5;
+  line-height: 1.5;
   letter-spacing: 20%;
   text-align: justify;
   margin: 10px;
+  padding: 20px;
 }
 
 .par, .contPar {
@@ -259,6 +292,20 @@ nav {
   flex-basis: 10%
 }
 
+.fruit-candy-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: antiquewhite;
+  color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+
 .main-item {
   display: flex;
   flex-wrap: wrap;
@@ -266,7 +313,7 @@ nav {
 
 .aboutDish {
   padding: 10px;
-  background: #950740;
+  border-radius: 8px;
 }
 
 .mainBtn {
@@ -313,7 +360,8 @@ nav {
   font-size: 20px;
   padding: 10px;
   background: antiquewhite;
-  color:#6F2232
+  color:#6F2232;
+  margin: 15px 0;
 }
 
 .mainContImage {
@@ -429,8 +477,15 @@ nav {
 }
 
 .infoKatarina {
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 14px;
   background: #4E4E50;
+  color: antiquewhite;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); 
+  padding: 5px 10px;
 }
+
 
 @media all and (max-width:800px) {
 

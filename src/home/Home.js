@@ -32,13 +32,11 @@ function Home() {
             </div>
 
             <div className="smallHeader">
-                <p className="info spaceCont">In today's world, blogging has become a popular activity. 
-    Depending on the blogger you follow, 
-    society make assumptions about your interests!
-    Some are passionate about a healthy lifestyle, 
-    some are obsessed with fashion, some love to travel, 
-    and some follow a variety of topics! 
-    Social networks can cater everyone's interests.</p>
+            <div className="text-container">
+    <p>In today's world, blogging has become a popular activity. Depending on the blogger you follow, society makes assumptions about your interests!</p>
+    <p>Some are passionate about a healthy lifestyle, some are obsessed with fashion, some love to travel, and some follow a variety of topics!</p>
+    <p>Social networks can cater to everyone's interests.</p>
+</div>
             </div>
 
         <div className ="smallHeader spaceCont" >
