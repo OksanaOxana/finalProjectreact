@@ -12,9 +12,9 @@ export const slice = createSlice({
       const timeId = new Date().getTime()
       state.cartItems.push({
         id: timeId,
-        goodId: action.payload.good.id,
+        goodId: action.payload.jewelry.id,
         quantity: action.payload.quantity,
-        totalPrice: action.payload.quantity * action.payload.good.price
+        totalPrice: action.payload.quantity * action.payload.jewelry.price
     }) 
   },
     removeItemFromCart:(state, action) => {

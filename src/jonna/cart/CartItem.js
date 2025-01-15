@@ -2,18 +2,19 @@ import { useDispatch } from "react-redux";
 import { dataCarousel } from "../../dataCarousel";
 import { removeItemFromCart } from "../../redux/cartSlice";
 
-const CartItem = ({cartItem}) => {
+const CartItem = ({cartItem, id}) => {
     const dispatch = useDispatch()
-    const {id, description, price, img} = dataCarousel['jonna']
-    dataCarousel['jonna'].find((item) => item.id === id)
-    return(
-        <div className="total">
-            <p key={id}>{description} - {cartItem.quantity} : ${price*cartItem.quantity}</p>
-            <span onClick={() =>dispatch(removeItemFromCart({cartItemId:cartItem.id}))}>
-               <img src={img} alt="pic"/>
-            </span>
-        </div>
-        
-    )
+    const goods = dataCarousel['jonna'].find((item) => item.id === cartItem.goodId)
+
+
+return(
+    <div className="total">
+        <p key={id}>{goods.description} - {cartItem.quantity} : ${goods.price*cartItem.quantity}</p>
+        <span onClick={() =>dispatch(removeItemFromCart({cartItemId:cartItem.id}))}>
+            <img className="iconTwo" alt='pic'/>
+        </span>
+    </div>
+    
+)
 }
 export default CartItem;

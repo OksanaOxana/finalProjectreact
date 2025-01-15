@@ -8,7 +8,7 @@ import VideoAndAudio from "./VideoAndAudio";
 import ControlledCarousel from "../ControlledCarousel";
 import { dataCarousel } from "../dataCarousel";
 import Cart from "./cart/Cart";
-import CartItem from "./cart/CartItem";
+import Goods from "./GoodsComponent/Goods";
 
 function Jonna() {
     useEffect(() => {
@@ -80,8 +80,8 @@ function Jonna() {
             </div>
 
             <div className="smallHeader spaceCont">
-               <CartItem />
                 <Cart />
+                <Goods />
             </div>
 
             <VideoAndAudio />
