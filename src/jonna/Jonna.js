@@ -7,6 +7,8 @@ import Photos from "../Photos";
 import VideoAndAudio from "./VideoAndAudio";
 import ControlledCarousel from "../ControlledCarousel";
 import { dataCarousel } from "../dataCarousel";
+import Cart from "./cart/Cart";
+import CartItem from "./cart/CartItem";
 
 function Jonna() {
     useEffect(() => {
@@ -26,6 +28,7 @@ function Jonna() {
         setTransition(!transition)
     }
     const [photosJonna, setPhotosJonna] = useState(data['jonna']);
+ 
     
     const chosenPhotos = (classPhotos) => {
         const newPhotos = data['jonna'].filter(item =>item.classPhotos===classPhotos)
@@ -74,6 +77,11 @@ function Jonna() {
             </div> 
               <div className="smallHeader spaceCont">
                 <h3>Take a look at this beauty inspired by Swedish nature!</h3>
+            </div>
+
+            <div className="smallHeader spaceCont">
+               <CartItem />
+                <Cart />
             </div>
 
             <VideoAndAudio />

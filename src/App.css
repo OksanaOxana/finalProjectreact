@@ -277,6 +277,7 @@ nav {
 
 .iconBtn {
   border: none;
+  border-radius: 20px;
 }
 
 .addPlan {
@@ -380,6 +381,14 @@ nav {
   flex-direction: column;
   align-self: center;
   background: antiquewhite;
+}
+
+.jewelryCont  {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: space-between;
+  background-color: aliceblue;
 }
 
 .infoJonna {

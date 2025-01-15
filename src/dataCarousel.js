@@ -128,46 +128,55 @@ export const dataCarousel = {
             id: 1,
             image: jonnaOne, 
             description: "BERG - ARMCUFF",
+            price: 350,
         },
         {
             id: 2,
             image: jonnaTwo, 
             description: "BISON - BRACELET",
+            price: 450
         },
         {
             id: 3,
             image: jonnaThree, 
             description: "WILD - NECKLACE",
+            price: 500,
         },
         {
             id: 4,
             image: jonnaFour, 
             description: "ANCIENT - RING",
+            price: 250,
         },
         {
             id: 5,
             image: jonnaFive, 
             description: "BJORK - EARRINGS",
+            price: 400,
         },
         {
             id: 6,
             image: jonnaSix, 
             description: "AURORA BOREALIS - NECKLACE",
+            price: 350,
         },
         {
             id: 7,
             image: jonnaSeven, 
             description: "BODY, MIND, SOUL - NECKLACE",
+            price: 270,
         },
         {
             id: 8,
             image: jonnaEight, 
             description: "BERG - ARMCUFF",
+            price: 280,
         },
         {
             id: 9,
             image: jonnaNine, 
             description: "BISON - BRACELET",
+            price: 260,
         },
     ],
 
