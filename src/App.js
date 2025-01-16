@@ -16,6 +16,7 @@ import Tanya from "./tanya/Tanya";
 import AboutDishes from "./tanya/AboutDishes";
 import gsap from "gsap";
 import AboutPhoto from "./AboutPhoto";
+import StoreJewelries from "./jonna/StoreJewelries";
 
 
 function App() {
@@ -46,6 +47,7 @@ function App() {
       <Route path="/alla" element = {<Alla/>}/>
       <Route path="/lesya" element = {<Lesya />}/>
       <Route path="/:images/:title" element = {<AboutPhoto/>}/>
+      <Route path="/store" element = {<StoreJewelries />}/>
     </Routes>
 
     <footer className="py-3 my-4">

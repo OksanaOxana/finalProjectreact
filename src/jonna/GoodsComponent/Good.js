@@ -13,12 +13,12 @@ const Good = ({jewelry, idx}) => {
             <div className="product">
                 <div key={idx} className="text">
                     <img className="allGoods" src={jewelry.image} alt='pic'/>
-                    <h6>{jewelry.description}</h6>
+                    <h2>{jewelry.description}</h2>
                     <p className="priceContainer">$ {jewelry.price}</p>
-                <div className="product">
+
                     <ChangeQuantity quantity = {quantity} setQuantity = {setQuantity}/>
-                    <button onClick={() => {dispatch(addItemToCart({jewelry, quantity}))}} className="btn">ADD</button>
-                </div>
+                    <button onClick={() => {dispatch(addItemToCart({jewelry, quantity}))}} className="quantityBtn">ADD</button>
+
                 </div>
             </div>
         </div>

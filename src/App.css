@@ -185,6 +185,7 @@ nav {
   font-family: 'Source Sans 3', sans-serif;
   font-size: 20px;
   border: 1px solid #c3073F;
+  transition: background-color 0.3s ease;
 }
 
 .infoAllaTwo {
@@ -383,13 +384,93 @@ nav {
   background: antiquewhite;
 }
 
-.jewelryCont  {
+/* Контейнер для всех товаров */
+.products {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
-  justify-content: space-between;
-  background-color: aliceblue;
+  justify-content: center; /* Центрирование по горизонтали */
+  gap: 20px; /* Расстояние между товарами */
+  padding: 20px;
 }
+
+/* Карточка товара */
+.product {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 250px; /* Ширина карточки */
+  height: 400px;
+  padding: 16px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Изображение товара */
+.allGoods {
+  width: 100%; /* Изображение занимает всю ширину карточки */
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+
+/* Описание товара */
+.text h2 {
+  font-size: 16px;
+  font-weight: bold;
+  min-height: 50px;
+  margin-bottom: 8px;
+}
+
+.text .priceContainer {
+  font-size: 16px;
+  color: #4E4E50;
+  margin-bottom: 16px;
+}
+
+/* Кнопка добавления в корзину */
+
+.quantityBtn {
+  font-family: 'Source Sans 3', sans-serif;
+  background: #4E4E50;
+  color:antiquewhite;
+  margin-top: 5px;
+  border-radius: 10px;
+}
+
+.quantityBtn:hover {
+  background:#950740;
+  color:#1A1A1D
+}
+
+.contQuantity {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:10px;
+  margin-top: 10px;
+  background: antiquewhite
+}
+
+.changeQuantity {
+  font-family: 'Source Sans 3', sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  border: none;
+  background:#950740;
+  padding: 5px;
+}
+
+
+
+
+
+
+
+
 
 .infoJonna {
   font-family: 'Source Sans 3', sans-serif;
